@@ -1,5 +1,9 @@
 import Tools from "./assets/Tools.js"
         let index
+        , github_account = "mentor-OC-archist"
+        , repo_name = "OCWD___P2_HTML5CSS3_filRouge"
+        , default_working_branch = "develop"
+        , prefix_host = "."
         //, tools = new Tools()
         
         //Tools.showSourceOnIframeLoad()
@@ -47,10 +51,12 @@ import Tools from "./assets/Tools.js"
             document.location.hash = select.value
             // console.log(select.value);
 
-            iframe.src = "./_/"+select.value
-            iframe_enonce.src = "./_/"+select.value+"/ENONCE.html"
-            iframe_sol.src = "./_/"+select.value+"/_/SOLUTION/"
-            iframe_codebase.src = "./_/"+select.value+"/_/"
+            if(location.host.indexOf('localhost')==-1)prefix_host = "https://raw.githubusercontent.com/"+github_account+"/"+repo_name+"/"+default_working_branch
+
+            iframe.src = prefix_host+"/_/"+select.value
+            iframe_enonce.src = prefix_host+"/_/"+select.value+"/ENONCE.html"
+            iframe_sol.src = prefix_host+"/_/"+select.value+"/_/SOLUTION/"
+            iframe_codebase.src = prefix_host+"/_/"
 
             /*
             h1.innerHTML = p.innerHTML = tasks_p.innerHTML = tasks_ol.innerHTML = ""
