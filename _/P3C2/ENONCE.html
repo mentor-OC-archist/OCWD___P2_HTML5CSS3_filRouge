@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P3C2: Découvrez le modèle des boîtes</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061365-decouvrez-le-modele-des-boites">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-7" data-widget="foldable">
+    <h3 id="r-8048317" data-claire-element-id="33460300" class="foldable__button secondTitle js-foldable-button">À vous
+      de jouer !<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8048322" data-claire-element-id="33460299" class="hoveredCourseElement"><img id="r-8048321"
+          data-claire-element-id="33460298"
+          src="../../../../assets/YourTurn.png"
+          alt="" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-8048269" data-claire-element-id="33404644">Vous allez maintenant pouvoir vous faire la main sur le site
+        de Robbie Lens, et mettre en pratique ce que vous venez d'apprendre&nbsp;! Dans la branche de départ de
+        l'exercice, vous trouverez un bout de CSS qui indique&nbsp;:</p>
+      <pre id="r-8048675" data-claire-element-id="33405873" class="code-block"><code data-claire-semantic="css" data-code="{&quot;language&quot;:&quot;css&quot;,&quot;source&quot;:&quot;* {\n    margin: 0;\n}&quot;}" class="ace" data-widget="codeBlock"><div class="ace-openclassrooms"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>* <span class="ace_paren ace_lparen">{</span>
+  </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_support ace_type">margin</span>: <span class="ace_constant ace_numeric">0</span>;
+  </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+  </div></div></div></code><textarea class="code-block--raw-code"></textarea></pre>
+      <p id="r-8048275" data-claire-element-id="33404650">Cela sert à réinitialiser les marges par défaut des
+        navigateurs.</p>
+      <p id="r-8048276" data-claire-element-id="33404651">À partir de là, vous allez :</p>
+      <ul id="r-8048291" data-claire-element-id="33405886" class="">
+        <li id="r-8048278" data-claire-element-id="33405875">
+          <p id="r-8048277" data-claire-element-id="33405874">ajouter un<code
+              data-claire-semantic="text"><strong>padding</strong></code>au &nbsp;<code
+              data-claire-semantic="text">header</code>&nbsp; et au &nbsp;<code
+              data-claire-semantic="text">footer</code>&nbsp; de &nbsp;<code
+              data-claire-semantic="text">20px</code>&nbsp; en haut et en bas, et de &nbsp;<code
+              data-claire-semantic="text">50px</code>&nbsp; à gauche et à droite&nbsp;;</p>
+        </li>
+        <li id="r-8048280" data-claire-element-id="33404655">
+          <p id="r-8048279" data-claire-element-id="33404654">ajouter une section autour du contenu de la page
+            d'accueil&nbsp;;</p>
+        </li>
+        <li id="r-8048282" data-claire-element-id="33405877">
+          <p id="r-8048281" data-claire-element-id="33405876">ajouter une section autour du contenu de la page
+            &nbsp;<code data-claire-semantic="text">A-propos</code>&nbsp; ;</p>
+        </li>
+        <li id="r-8048284" data-claire-element-id="33405879">
+          <p id="r-8048283" data-claire-element-id="33405878">donner à vos sections (pour les futures sections à venir)
+            un&nbsp;<code data-claire-semantic="text"><strong>padding</strong></code>&nbsp;de &nbsp;<code
+              data-claire-semantic="text">80px</code>&nbsp; ;</p>
+        </li>
+        <li id="r-8048286" data-claire-element-id="33405881">
+          <p id="r-8048285" data-claire-element-id="33405880">créer un&nbsp;<code
+              data-claire-semantic="text"><strong>padding</strong></code>&nbsp;de &nbsp;<code
+              data-claire-semantic="text">50px</code>&nbsp; pour &nbsp;<code
+              data-claire-semantic="text">carre-contenu</code>&nbsp; ;</p>
+        </li>
+        <li id="r-8048288" data-claire-element-id="33405883">
+          <p id="r-8048287" data-claire-element-id="33405882">centrer le contenu de la page &nbsp;<code
+              data-claire-semantic="text">A-propos</code>&nbsp; ;</p>
+        </li>
+        <li id="r-8048290" data-claire-element-id="33405885">
+          <p id="r-8048289" data-claire-element-id="33405884">aérer le contenu de la page&nbsp; &nbsp;<code
+              data-claire-semantic="text">A-propos</code>&nbsp; : mettre de la marge au-dessus du sous-titre "Services"
+            et de la liste des compétences.&nbsp;</p>
+        </li>
+      </ul>
+      <aside id="r-8048676" data-claire-element-id="33405888" data-claire-semantic="information">
+        <p id="r-8048292" data-claire-element-id="33405887">Vous trouverez sur GitHub la base de code nécessaire pour
+          réaliser l’exercice sur <a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P3C2-exercice"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P3C2-exercice</a>. Voici la solution
+          sur&nbsp;<a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P3C2-solution"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P3C2-solution</a> pour vérifier si vous aviez
+          vu juste.</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-8" data-widget="foldable">
+    <h3 id="r-8048323" data-claire-element-id="33444589" class="foldable__button secondTitle js-foldable-button">En
+      résumé<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <ul id="r-8048308" data-claire-element-id="33444588" class="hoveredCourseElement">
+        <li id="r-8048301" data-claire-element-id="33444587">
+          <p id="r-8048295" data-claire-element-id="33444586">On distingue deux principaux types de balises en HTML :
+          </p>
+          <ul id="r-8048300" data-claire-element-id="33405977">
+            <li id="r-8048297" data-claire-element-id="33405974">
+              <p id="r-8048296" data-claire-element-id="33405973">les balises de type &nbsp;<code
+                  data-claire-semantic="text">block</code>&nbsp; comme&nbsp;&nbsp;<code
+                  data-claire-semantic="text">&lt;p&gt;</code>&nbsp; ou&nbsp;&nbsp;<code
+                  data-claire-semantic="text">&lt;h1&gt;</code>&nbsp;créent un retour à la ligne et occupent par défaut
+                toute la largeur disponible. Elles se suivent de haut en bas&nbsp;;</p>
+            </li>
+            <li id="r-8048299" data-claire-element-id="33405976">
+              <p id="r-8048298" data-claire-element-id="33405975">les balises de type &nbsp;<code
+                  data-claire-semantic="text">inline</code>&nbsp; comme&nbsp;&nbsp;<code
+                  data-claire-semantic="text">&lt;a&gt;</code>&nbsp; ou&nbsp;&nbsp;<code
+                  data-claire-semantic="text">&lt;strong&gt;</code>&nbsp; délimitent du texte au milieu d'une ligne.
+                Elles se suivent de gauche à droite.</p>
+            </li>
+          </ul>
+        </li>
+        <li id="r-8048303" data-claire-element-id="33406004">
+          <p id="r-8048302" data-claire-element-id="33406003">On peut modifier la taille d'une balise de type&nbsp;<code
+              data-claire-semantic="text">block</code>&nbsp; avec les propriétés CSS &nbsp;<code
+              data-claire-semantic="text">width</code>&nbsp;(largeur) et &nbsp;<code
+              data-claire-semantic="text">height&nbsp;</code>&nbsp;(hauteur).</p>
+        </li>
+        <li id="r-8048305" data-claire-element-id="33406006">
+          <p id="r-8048304" data-claire-element-id="33406005">Les éléments de la page disposent chacun de&nbsp;<code
+              data-claire-semantic="text">padding</code>&nbsp;(marges intérieures) et de&nbsp;<code
+              data-claire-semantic="text">margin</code>&nbsp; (marges extérieures).</p>
+        </li>
+        <li id="r-8048307" data-claire-element-id="33405954">
+          <p id="r-8048306" data-claire-element-id="33405953">On peut&nbsp;centrer le contenu d'un bloc dont la largeur
+            est définie par&nbsp;<code data-claire-semantic="text">width</code>&nbsp;avec&nbsp;<code
+              data-claire-semantic="text">margin: auto;</code></p>
+        </li>
+      </ul>
+      <p id="r-8048309" data-claire-element-id="33404684" class=""><em>Ça va ? Vous avez bien digéré toutes les
+          informations&nbsp;? Alors accrochez-vous&nbsp;! Dans le chapitre suivant, on va voir une partie essentielle du
+          CSS moderne&nbsp;: Flexbox. Alors à tout de suite&nbsp;!</em></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

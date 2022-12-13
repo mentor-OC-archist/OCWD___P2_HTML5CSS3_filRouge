@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P3C1: Structurez votre page</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061352-structurez-votre-page">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-5" data-widget="foldable">
+    <h3 id="r-8046780" data-claire-element-id="33460262" class="foldable__button secondTitle js-foldable-button">À vous
+      de jouer !<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8046764" data-claire-element-id="33460261" class=""><img id="r-8046763" data-claire-element-id="33460260"
+          src="../../../../assets/YourTurn.png"
+          alt="" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-8046765" data-claire-element-id="33400315" class="">C'est le moment de mettre en pratique ce que vous
+        venez d'apprendre dans le portfolio de Robbie Lens. Pour cela, vous allez&nbsp;:</p>
+      <ul id="r-8046776" data-claire-element-id="33402829">
+        <li id="r-8046767" data-claire-element-id="33402822">
+          <p id="r-8046766" data-claire-element-id="33402821">intégrer un &nbsp;<code
+              data-claire-semantic="text">&lt;header&gt;</code>&nbsp; dans les pages d'accueil et Á propos&nbsp;;</p>
+        </li>
+        <li id="r-8046769" data-claire-element-id="33402824">
+          <p id="r-8046768" data-claire-element-id="33402823">intégrer un &nbsp;<code
+              data-claire-semantic="text"> &lt;footer&gt;</code>&nbsp; dans ces même pages ;</p>
+        </li>
+        <li id="r-8046771" data-claire-element-id="33402826">
+          <p id="r-8046770" data-claire-element-id="33402825">ajouter &nbsp;<code
+              data-claire-semantic="text">&lt;main&gt;</code>&nbsp; là où c'est nécessaire ;</p>
+        </li>
+        <li id="r-8046773" data-claire-element-id="33402828">
+          <p id="r-8046772" data-claire-element-id="33402827">basculer vos liens hypertextes de navigation dans une
+            balise &nbsp;<code data-claire-semantic="text">&lt;nav&gt;</code>&nbsp; ;</p>
+        </li>
+        <li id="r-8046775" data-claire-element-id="33400325">
+          <p id="r-8046774" data-claire-element-id="33400324">adapter les déclarations CSS en fonction des modifications
+            faites.&nbsp;</p>
+        </li>
+      </ul>
+      <aside id="r-8046779" data-claire-element-id="33400329" data-claire-semantic="information" class="">
+        <p id="r-8046777" data-claire-element-id="33400327">Comme d'habitude, vous avez accès sur GitHub à la base de
+          code pour faire l’exercice sur <a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P3C1-exercice"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P3C1-exercice</a>.</p>
+        <p id="r-8046778" data-claire-element-id="33400328">Vous avez trouvé cela difficile ? En cas de doute, consultez
+          la solution sur&nbsp;<a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P3C1-solution"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P3C1</a><a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P3C1-solution"
+            target="_blank" rel="noopener noreferrer nofollow">-solution</a>.</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-6" data-widget="foldable">
+    <h3 id="r-8046801" data-claire-element-id="33450498" class="foldable__button secondTitle js-foldable-button">En
+      résumé<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <ul id="r-8046800" data-claire-element-id="33402365" class="">
+        <li id="r-8046795" data-claire-element-id="33402364">
+          <p id="r-8046781" data-claire-element-id="33400331">Plusieurs balises permettent de délimiter les différentes
+            zones qui constituent la page web&nbsp;:</p>
+          <ul id="r-8046794" data-claire-element-id="33402363">
+            <li id="r-8046783" data-claire-element-id="33402352">
+              <p id="r-8046782" data-claire-element-id="33402351"><code
+                  data-claire-semantic="text">&lt;header&gt;</code>&nbsp; : en-tête ;</p>
+            </li>
+            <li id="r-8046785" data-claire-element-id="33402354">
+              <p id="r-8046784" data-claire-element-id="33402353"><code
+                  data-claire-semantic="text">&lt;footer&gt;</code>&nbsp; : pied de page ;</p>
+            </li>
+            <li id="r-8046787" data-claire-element-id="33402356">
+              <p id="r-8046786" data-claire-element-id="33402355"><code
+                  data-claire-semantic="text">&lt;nav&gt;</code>&nbsp; : liens principaux de navigation&nbsp;;</p>
+            </li>
+            <li id="r-8046789" data-claire-element-id="33402358">
+              <p id="r-8046788" data-claire-element-id="33402357"><code
+                  data-claire-semantic="text">&lt;section&gt;</code>&nbsp; : section de page ;</p>
+            </li>
+            <li id="r-8046791" data-claire-element-id="33402360">
+              <p id="r-8046790" data-claire-element-id="33402359"><code
+                  data-claire-semantic="text">&lt;aside&gt;</code>&nbsp; : informations complémentaires&nbsp;;</p>
+            </li>
+            <li id="r-8046793" data-claire-element-id="33402362">
+              <p id="r-8046792" data-claire-element-id="33402361"><code
+                  data-claire-semantic="text">&lt;article&gt;</code>&nbsp; : article indépendant.</p>
+            </li>
+          </ul>
+        </li>
+        <li id="r-8046797" data-claire-element-id="33400347">
+          <p id="r-8046796" data-claire-element-id="33400346">Ces balises peuvent être imbriquées les unes dans les
+            autres. Ainsi, une section peut avoir son propre en-tête.</p>
+        </li>
+        <li id="r-8046799" data-claire-element-id="33400349">
+          <p id="r-8046798" data-claire-element-id="33400348">Ces balises ne s'occupent pas de la mise en page. Elles
+            servent seulement à indiquer à l'ordinateur la fonction du texte qu'elles encadrent. On pourrait très bien
+            placer l'en-tête en bas de la page, si on le souhaitait.</p>
+        </li>
+      </ul>
+      <p id="r-8046806" data-claire-element-id="33403314"><em>Vous savez maintenant comment structurer correctement vos
+          pages web ! Passons au prochain chapitre : vous allez découvrir le modèle des boîtes, il s'agit d'une autre
+          façon de structurer une page web, mais cette fois à l'aide du CSS, on y va !</em></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

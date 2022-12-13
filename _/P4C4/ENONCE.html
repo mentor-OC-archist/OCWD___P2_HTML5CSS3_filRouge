@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P4C4: Utilisez le responsive design avec les Media Queries</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061510-utilisez-le-responsive-design-avec-les-media-queries">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-4" data-widget="foldable">
+    <h3 id="r-8055427" data-claire-element-id="33460599" class="foldable__button secondTitle js-foldable-button">À vous
+      de jouer !<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8055426" data-claire-element-id="33460598" class="hoveredCourseElement"><img id="r-8055425"
+          data-claire-element-id="33460597"
+          src="../../../../assets/YourTurn.png"
+          alt="" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-8055385" data-claire-element-id="33422891">Dernier rendez-vous avec le site de Robbie Lens. Cette
+        fois-ci, vous allez adapter le site pour les formats mobile&nbsp;!</p>
+      <aside id="r-8055432" data-claire-element-id="33422893" data-claire-semantic="information">
+        <p id="r-8055431" data-claire-element-id="33422892">Vous trouverez la base de code pour faire l’exercice sur <a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P4C4-exercice"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P4C4-exercice</a>.</p>
+      </aside>
+      <ul id="r-8055398" data-claire-element-id="33423101">
+        <li id="r-8055387" data-claire-element-id="33423092">
+          <p id="r-8055386" data-claire-element-id="33423091">Réduisez la taille des titres à &nbsp;<code
+              data-claire-semantic="text">2em</code>&nbsp; .</p>
+        </li>
+        <li id="r-8055389" data-claire-element-id="33423094">
+          <p id="r-8055388" data-claire-element-id="33423093">Remplacez les &nbsp;<code
+              data-claire-semantic="text">width</code>&nbsp; pour &nbsp;<code
+              data-claire-semantic="text">.accueil-introduction</code>&nbsp; et &nbsp;<code
+              data-claire-semantic="text">form</code>&nbsp; par la propriété &nbsp;<code
+              data-claire-semantic="text">max-width</code>&nbsp; sur la page d'accueil, avec une valeur de &nbsp;<code
+              data-claire-semantic="text">1000px</code>&nbsp; .</p>
+        </li>
+        <li id="r-8055391" data-claire-element-id="33423096">
+          <p id="r-8055390" data-claire-element-id="33423095">Cachez la section "Tarifs" sur la page "À propos".</p>
+        </li>
+        <li id="r-8055393" data-claire-element-id="33423098">
+          <p id="r-8055392" data-claire-element-id="33423097">Tous les éléments qui sont disposés à l'horizontale
+            basculent à la verticale à partir de la taille d'écran &nbsp;<code
+              data-claire-semantic="text">996px</code>&nbsp; (introduction, grilles photos et formulaire).</p>
+        </li>
+        <li id="r-8055395" data-claire-element-id="33423100">
+          <p id="r-8055394" data-claire-element-id="33423099">Le &nbsp;<code
+              data-claire-semantic="text">padding</code>&nbsp; sur le côté des pages passe de &nbsp;<code
+              data-claire-semantic="text">80px</code>&nbsp; à &nbsp;<code data-claire-semantic="text">20px</code>&nbsp;
+            .</p>
+        </li>
+        <li id="r-8055397" data-claire-element-id="33422842">
+          <p id="r-8055396" data-claire-element-id="33422841">Les liens de navigation du header passent à la verticale
+            et sont centrés.</p>
+        </li>
+      </ul>
+      <aside id="r-8055433" data-claire-element-id="33422895" data-claire-semantic="information">
+        <p id="r-8055399" data-claire-element-id="33422844">Si vous voulez avoir des idées de comment organiser les
+          éléments sans regarder la solution, vous pouvez vous référer à <a
+            href="https://openclassrooms-student-center.github.io/1603881-creez-votre-site-web-avec-html5-et-css3/">la
+            version en ligne du site de Robbie Lens</a>.</p>
+        <p id="r-8055400" data-claire-element-id="33422894">Comme d'habitude, vous pouvez accéder à la solution
+          sur&nbsp;<a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P4C4-solution"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P4C4-solution</a>.</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-5" data-widget="foldable">
+    <h3 id="r-8055434" data-claire-element-id="33451230" class="foldable__button secondTitle js-foldable-button">En
+      résumé<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8055402" data-claire-element-id="33422847" class="">Pour adapter un site internet aux différentes tailles
+        d'écran, plusieurs techniques sont nécessaires&nbsp;:</p>
+      <ul id="r-8055416" data-claire-element-id="33451229" class="">
+        <li id="r-8055404" data-claire-element-id="33422849">
+          <p id="r-8055403" data-claire-element-id="33422848">Il faut tout d'abord réussir à sélectionner les
+            différentes tailles d'écran disponibles, afin d'appliquer le style souhaité.&nbsp;</p>
+        </li>
+        <li id="r-8055406" data-claire-element-id="33451228">
+          <p id="r-8055405" data-claire-element-id="33451227">Pour cela, on a recours aux media queries qui sont la
+            manière de "conditionner" le style appliqué&nbsp;: "Si l'écran de l'utilisateur est plus petit que la taille
+            &nbsp;<code data-claire-semantic="text">XXXpx</code>&nbsp; , alors appliquer ce style".</p>
+        </li>
+        <li id="r-8055415" data-claire-element-id="33423110">
+          <p id="r-8055407" data-claire-element-id="33422852">Il est ensuite possible d'utiliser les différentes
+            astuces&nbsp;:</p>
+          <ul id="r-8055414" data-claire-element-id="33423109">
+            <li id="r-8055409" data-claire-element-id="33423104">
+              <p id="r-8055408" data-claire-element-id="33423103"><code
+                  data-claire-semantic="text">display: none</code>&nbsp; pour cacher un élément qui ne rentre pas sur
+                les tailles d'écran plus petites&nbsp;;</p>
+            </li>
+            <li id="r-8055411" data-claire-element-id="33423106">
+              <p id="r-8055410" data-claire-element-id="33423105"><code
+                  data-claire-semantic="text">overflow</code>&nbsp; pour permettre de scroller avec la souris dans un
+                élément container&nbsp;;</p>
+            </li>
+            <li id="r-8055413" data-claire-element-id="33423108">
+              <p id="r-8055412" data-claire-element-id="33423107"><code
+                  data-claire-semantic="text">min-width</code>&nbsp; et &nbsp;<code
+                  data-claire-semantic="text">max-width</code>&nbsp; pour définir des tailles minimum et maximum.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p id="r-8055417" data-claire-element-id="33422862" class=""><em>Bravo à vous ! Vous avez quasiment terminé ce
+          cours&nbsp;!&nbsp;</em></p>
+      <p id="r-8055418" data-claire-element-id="33422863" class=""><em>Dans le prochain chapitre, nous vous donnerons
+          quelques astuces pour aller plus loin dans votre apprentissage du HTML et du CSS mais de manière générale,
+          dans le monde du Web.</em></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

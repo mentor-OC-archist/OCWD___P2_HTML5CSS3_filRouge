@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P4C1 codepen B: Fusionnez des cellules du tableau avec les attributs colspan et rowspan</title>
+  <style>
+    * {
+      font-family: Arial;
+      text-align: left;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: auto;
+    }
+
+    td,
+    th {
+      padding: 15px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table>
+    <tr>
+      <th>Titre du film</th>
+      <th>Pour enfants ?</th>
+      <th>Pour adolescents ?</th>
+    </tr>
+    <tr>
+      <td>Massacre à la tronçonneuse</td>
+      <td>Non, trop violent</td>
+      <td rowspan="2">Oui</td>
+    </tr>
+    <tr>
+      <td>The Ring</td>
+      <td>Effrayant</td>
+    </tr>
+    <tr>
+      <td>Les bisounours font du ski</td>
+      <td>Oui, adapté</td>
+      <td>Pas assez violent...</td>
+    </tr>
+    <tr>
+      <td>Lucky Luke, seul contre tous</td>
+      <td colspan="2">Pour toute la famille !</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

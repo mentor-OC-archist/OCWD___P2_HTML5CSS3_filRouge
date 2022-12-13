@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P2C4: Créez des bordures et des ombres</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061337-creez-des-bordures-et-des-ombres">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-5" data-widget="foldable">
+    <h3 id="r-8045155" data-claire-element-id="33459928"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">À vous de jouer !<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8045172" data-claire-element-id="33459927"><img id="r-8045171" data-claire-element-id="33459926"
+          src="../../../../assets/YourTurn.png"
+          alt=""></p>
+      <p id="r-8045147" data-claire-element-id="33393357">C’est maintenant le moment de mettre en pratique ce que vous
+        venez d’apprendre, dans le projet de Robbie Lens. Pour cela, vous allez&nbsp;:</p>
+      <ul id="r-8045152" data-claire-element-id="33394799">
+        <li id="r-8045149" data-claire-element-id="33394796">
+          <p id="r-8045148" data-claire-element-id="33394795">ajouter des arrondis sur les liens "Un projet&nbsp;?
+            Écrivez-moi" et "Voir mon portfolio",&nbsp;d'une valeur de &nbsp;<code
+              data-claire-semantic="text">50px</code>&nbsp; (le rendu n'est pas très beau, mais ne vous inquiétez pas,
+            nous allons l'améliorer au fil des chapitres)&nbsp;;</p>
+        </li>
+        <li id="r-8045151" data-claire-element-id="33394798">
+          <p id="r-8045150" data-claire-element-id="33394797">créer une &nbsp;<code
+              data-claire-semantic="text">div</code>&nbsp;, sur la page À propos, qui englobe le paragraphe et la liste
+            de compétences de Robbie Lens&nbsp;; lui ajouter une bordure&nbsp;à droite et en bas, de &nbsp;<code
+              data-claire-semantic="text">1px</code>&nbsp; d'épaisseur et de la couleur &nbsp;<code
+              data-claire-semantic="text">#A5B4FC</code>&nbsp; .</p>
+        </li>
+      </ul>
+      <aside id="r-8045651" data-claire-element-id="33394801" data-claire-semantic="information" class="">
+        <p id="r-8045153" data-claire-element-id="33393363">Comme pour les activités précédentes, vous avez accès au
+          code nécessaire pour débuter l’exercice sur <a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P2C4-exercice"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P2C4-exercice</a>,</p>
+        <p id="r-8045154" data-claire-element-id="33394800">Passez-y un peu de temps avant de consulter la solution
+          sur&nbsp;<a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P2C4-solution"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P2C4-solution</a>.</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-6" data-widget="foldable">
+    <h3 id="r-8045166" data-claire-element-id="33450256" class="foldable__button secondTitle js-foldable-button">En
+      résumé<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <ul id="r-8045164" data-claire-element-id="33395755" class="">
+        <li id="r-8045157" data-claire-element-id="33394876">
+          <p id="r-8045156" data-claire-element-id="33394875">On peut appliquer une bordure à un élément avec la
+            super-propriété CSS &nbsp;<code data-claire-semantic="text">border</code>. Il faut indiquer la largeur de la
+            bordure, sa couleur et son type (simple, double, pointillés, tirets).</p>
+        </li>
+        <li id="r-8045159" data-claire-element-id="33395754">
+          <p id="r-8045158" data-claire-element-id="33395753">On peut arrondir les bordures avec la propriété CSS
+            &nbsp;<code data-claire-semantic="text">border-radius</code>.</p>
+        </li>
+        <li id="r-8045161" data-claire-element-id="33394878">
+          <p id="r-8045160" data-claire-element-id="33394877">On peut ajouter une ombre aux blocs de texte avec
+            &nbsp;<code data-claire-semantic="text">box-shadow</code>. On doit indiquer le décalage vertical et
+            horizontal de l'ombre, son niveau d'adoucissement et sa couleur.</p>
+        </li>
+        <li id="r-8045163" data-claire-element-id="33394916">
+          <p id="r-8045162" data-claire-element-id="33394915">Le texte peut lui aussi avoir une ombre avec &nbsp;<code
+              data-claire-semantic="text">text-shadow</code>.</p>
+        </li>
+      </ul>
+      <p id="r-8045165" data-claire-element-id="33394955"><em>C’est grisant, n’est-ce pas ? Vous allez voir, dans le
+          prochain chapitre, on va encore plus s’amuser en créant des apparences dynamiques en fonction des actions de
+          l’utilisateur.&nbsp;Allons-y !</em></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P3C3 codepen: Alignez les éléments sur un axe principal et secondaire</title>
+  <style>
+    .container {
+      display: flex;
+      width: 650px;
+      flex-wrap: wrap;
+      height: 400px;
+      border: solid 2px #000
+    }
+
+    .start {
+      align-content: flex-start
+    }
+
+    .end {
+      align-content: flex-end;
+    }
+
+    .center {
+      align-content: center;
+    }
+
+    .spaceBetween {
+      align-content: space-between;
+    }
+
+    .spaceAround {
+      align-content: space-around;
+    }
+
+    .stretch {
+      align-content: stretch;
+    }
+
+    .element {
+      width: 150px;
+      min-height: 100px;
+    }
+
+    .element1 {
+      background-color: orange;
+    }
+
+    .element2 {
+      background-color: blue;
+    }
+
+    .element3 {
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Start</h2>
+  <div class="container start">
+    <div class="element element1"></div>
+    <div class="element element2"></div>
+    <div class="element element3"></div>
+    <div class="element element2"></div>
+    <div class="element element1"></div>
+    <div class="element element3"></div>
+    <div class="element element1"></div>
+    <div class="element element2"></div>
+    <div class="element element3"></div>
+    <div class="element element2"></div>
+    <div class="element element1"></div>
+    <div class="element element3"></div>
+  </div>
+
+  <h2>End</h2>
+  <div class="container end">
+    <div class="element element1"></div>
+    <div class="element element2"></div>
+    <div class="element element3"></div>
+    <div class="element element2"></div>
+    <div class="element element1"></div>
+    <div class="element element3"></div>
+    <div class="element element1"></div>
+    <div class="element element2"></div>
+    <div class="element element3"></div>
+    <div class="element element2"></div>
+    <div class="element element1"></div>
+    <div class="element element3"></div>
+  </div>
+
+  <h2>Center</h2>
+  <div class="container start">
+    <div class="element element1"></div>
+    <div class="element element2"></div>
+    <div class="element element3"></div>
+    <div class="element element2"></div>
+    <div class="element element1"></div>
+    <div class="element element3"></div>
+    <div class="element element1"></div>
+    <div class="element element2"></div>
+    <div class="element element3"></div>
+    <div class="element element2"></div>
+    <div class="element element1"></div>
+    <div class="element element3"></div>
+  </div>
+
+  <h2>Space Between</h2>
+  <div class="container spaceBetween">
+    <div class="element element1"></div>
+    <div class="element element2"></div>
+    <div class="element element3"></div>
+    <div class="element element2"></div>
+    <div class="element element1"></div>
+    <div class="element element3"></div>
+    <div class="element element1"></div>
+    <div class="element element2"></div>
+    <div class="element element3"></div>
+    <div class="element element2"></div>
+    <div class="element element1"></div>
+    <div class="element element3"></div>
+  </div>
+
+  <h2>Space Around</h2>
+  <div class="container spaceAround">
+    <div class="element element1"></div>
+    <div class="element element2"></div>
+    <div class="element element3"></div>
+    <div class="element element2"></div>
+    <div class="element element1"></div>
+    <div class="element element3"></div>
+    <div class="element element1"></div>
+    <div class="element element2"></div>
+    <div class="element element3"></div>
+    <div class="element element2"></div>
+    <div class="element element1"></div>
+    <div class="element element3"></div>
+  </div>
+
+  <h2>Stretch</h2>
+  <div class="container stretch">
+    <div class="element element1"></div>
+    <div class="element element2"></div>
+    <div class="element element3"></div>
+    <div class="element element2"></div>
+    <div class="element element1"></div>
+    <div class="element element3"></div>
+    <div class="element element1"></div>
+    <div class="element element2"></div>
+    <div class="element element3"></div>
+    <div class="element element2"></div>
+    <div class="element element1"></div>
+    <div class="element element3"></div>
+  </div>
+
+</body>
+
+</html>

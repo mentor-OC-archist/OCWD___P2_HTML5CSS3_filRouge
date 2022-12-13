@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P2C2: Changez l'apparence du texte</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061278-integrez-le-css-dans-la-page-html">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-7" data-widget="foldable">
+    <h3 id="r-8039632" data-claire-element-id="33459838"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">À vous de jouer !<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8039648" data-claire-element-id="33459837" class=""><img id="r-8039647" data-claire-element-id="33459836"
+          src="../../../../assets/YourTurn.png"
+          alt="" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-8039587" data-claire-element-id="33383062">Maintenant que vous avez appris comment mettre du texte en
+        forme, vous allez pouvoir appliquer cela au projet de Robbie Lens. Pour cela, vous allez&nbsp;:</p>
+      <ul id="r-8039627" data-claire-element-id="33384833">
+        <li id="r-8039589" data-claire-element-id="33383064">
+          <p id="r-8039588" data-claire-element-id="33383063">Importer les deux polices principales du projet avec
+            Google Font&nbsp;: Montserrat et Manrope.</p>
+        </li>
+        <li id="r-8039624" data-claire-element-id="33384830">
+          <p id="r-8039590" data-claire-element-id="33383065">Assigner les propriétés de polices suivantes&nbsp;:</p>
+          <ul id="r-8039623" data-claire-element-id="33384829">
+            <li id="r-8039599" data-claire-element-id="33384808">
+              <p id="r-8039591" data-claire-element-id="33383066">les titres H1 :</p>
+              <ul id="r-8039598" data-claire-element-id="33384807">
+                <li id="r-8039593" data-claire-element-id="33384802">
+                  <p id="r-8039592" data-claire-element-id="33384801"><code
+                      data-claire-semantic="text">3.5em</code>&nbsp;&nbsp;</p>
+                </li>
+                <li id="r-8039595" data-claire-element-id="33384804">
+                  <p id="r-8039594" data-claire-element-id="33384803">en couleur &nbsp;<code
+                      data-claire-semantic="text">#A5B4FC</code>&nbsp;&nbsp;</p>
+                </li>
+                <li id="r-8039597" data-claire-element-id="33384806">
+                  <p id="r-8039596" data-claire-element-id="33384805">police Montserrat</p>
+                </li>
+              </ul>
+            </li>
+            <li id="r-8039606" data-claire-element-id="33384814">
+              <p id="r-8039600" data-claire-element-id="33383075">les paragraphes :</p>
+              <ul id="r-8039605" data-claire-element-id="33384813">
+                <li id="r-8039602" data-claire-element-id="33384810">
+                  <p id="r-8039601" data-claire-element-id="33384809"><code
+                      data-claire-semantic="text">1.1em</code>&nbsp;</p>
+                </li>
+                <li id="r-8039604" data-claire-element-id="33384812">
+                  <p id="r-8039603" data-claire-element-id="33384811">police Manrope</p>
+                </li>
+              </ul>
+            </li>
+            <li id="r-8039613" data-claire-element-id="33384820">
+              <p id="r-8039607" data-claire-element-id="33383082">les listes :</p>
+              <ul id="r-8039612" data-claire-element-id="33384819">
+                <li id="r-8039609" data-claire-element-id="33384816">
+                  <p id="r-8039608" data-claire-element-id="33384815"><code data-claire-semantic="text">1em</code></p>
+                </li>
+                <li id="r-8039611" data-claire-element-id="33384818">
+                  <p id="r-8039610" data-claire-element-id="33384817">police Manrope</p>
+                </li>
+              </ul>
+            </li>
+            <li id="r-8039622" data-claire-element-id="33384828">
+              <p id="r-8039614" data-claire-element-id="33383089">les liens :</p>
+              <ul id="r-8039621" data-claire-element-id="33384827">
+                <li id="r-8039616" data-claire-element-id="33384822">
+                  <p id="r-8039615" data-claire-element-id="33384821">enlever le soulignement</p>
+                </li>
+                <li id="r-8039620" data-claire-element-id="33384824">
+                  <p id="r-8039619" data-claire-element-id="33384823"><code data-claire-semantic="text">1em</code></p>
+                </li>
+                <li id="r-8040043" data-claire-element-id="33384826">
+                  <p id="r-8040042" data-claire-element-id="33384825">police Manrope</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li id="r-8039626" data-claire-element-id="33384832">
+          <p id="r-8039625" data-claire-element-id="33384831">Remplacer les &nbsp;<code
+              data-claire-semantic="text">&lt;span class="important"&gt;&lt;/span&gt;</code>&nbsp; par des éléments
+            &nbsp;<code data-claire-semantic="text">em</code>&nbsp; tout en gardant le même style.</p>
+        </li>
+      </ul>
+      <aside id="r-8040052" data-claire-element-id="33385441" data-claire-semantic="information" class="">
+        <p id="r-8039628" data-claire-element-id="33384891">Vous trouverez la base de code pour démarrer l’exercice sur
+          la&nbsp;<a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P2C2-exercice"
+            target="_blank" rel="noopener noreferrer nofollow">branche P2C2-exercice</a>.</p>
+        <p id="r-8039630" data-claire-element-id="33385440">Et comme d’habitude, on ne vous abandonne pas dans la
+          nature, la solution se trouve sur la&nbsp;<a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P2C2-solution"
+            target="_blank" rel="noopener noreferrer nofollow">branche P2C2-solution</a>.</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-8" data-widget="foldable">
+    <h3 id="r-8039644" data-claire-element-id="33450059" class="foldable__button secondTitle js-foldable-button">En
+      résumé<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <ul id="r-8039641" data-claire-element-id="33450058" class="">
+        <li id="r-8039634" data-claire-element-id="33385471">
+          <p id="r-8039633" data-claire-element-id="33385470">On modifie la taille du texte avec la propriété
+            CSS&nbsp;<code data-claire-semantic="text">font-size</code>.</p>
+        </li>
+        <li id="r-8040253" data-claire-element-id="33450057">
+          <p id="r-8040252" data-claire-element-id="33450056">On peut indiquer la taille en pixels, comme<code
+              data-claire-semantic="text">16px</code>&nbsp;; ou encore en “em”, comme&nbsp;<code
+              data-claire-semantic="text">1.3em</code>.</p>
+        </li>
+        <li id="r-8039636" data-claire-element-id="33385621">
+          <p id="r-8039635" data-claire-element-id="33385620">On&nbsp;indique la police du texte avec&nbsp;la propriété
+            CSS&nbsp;&nbsp;<code data-claire-semantic="text">font-family</code>&nbsp;.&nbsp;</p>
+        </li>
+        <li id="r-8039638" data-claire-element-id="33385623">
+          <p id="r-8039637" data-claire-element-id="33385622">De nombreuses propriétés de mise en forme du texte
+            existent&nbsp;: font-style pour l'italique, font-weight pour la mise en gras, text-decoration pour le
+            soulignement.</p>
+        </li>
+        <li id="r-8039640" data-claire-element-id="33385625">
+          <p id="r-8039639" data-claire-element-id="33385624">Le texte peut être aligné avec&nbsp;la propriété
+            CSS&nbsp;<code data-claire-semantic="text">text-align</code>&nbsp; .</p>
+        </li>
+      </ul>
+      <p id="r-8039642" data-claire-element-id="33385660"><em>Bravo ! Vous venez encore d'ajouter une nouvelle corde à
+          votre arc avec la mise en forme du texte. À partir de maintenant, dans mes démonstrations de code,
+          j'utiliserai uniquement&nbsp;une police "sans-sérif". Dans le prochain chapitre, nous allons apprendre à
+          ajouter de la couleur et un fond. Alors à tout de suite&nbsp;!</em></p>
+      <p id="r-8067245" data-claire-element-id="33449996"></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

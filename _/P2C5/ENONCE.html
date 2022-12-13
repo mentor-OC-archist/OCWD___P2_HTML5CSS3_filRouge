@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P2C5: Créez des apparences dynamiques</title>
+  <style>    code[data-claire-semantic="text"]{background: rgba(0,0,0,.04);     padding: 1px 5px;     margin: 0 4px;     border: 1px solid rgba(0,0,0,.09);     display: inline-block;     word-break: break-word;}
+  code[data-claire-semantic="css"] .ace-openclassrooms{    margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+  }
+  code[data-claire-semantic="css"]+textarea{display:none;}
+  .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+  }
+  </style>
+</head>
+
+<body>
+  <a href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/1605763-creez-des-apparences-dynamiques">Chapitre du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-6" data-widget="foldable"><h3 id="r-8046352" data-claire-element-id="33459951" class="foldable__button secondTitle js-foldable-button hoveredCourseElement">À vous de jouer !<i class="foldable__icon icon-next"></i></h3><div class="foldable__content"><p id="r-8046322" data-claire-element-id="33459950" class=""><img id="r-8046321" data-claire-element-id="33459949" src="../../../../assets/YourTurn.png" alt="" style="cursor: -webkit-zoom-in;"></p><p id="r-8046323" data-claire-element-id="33396513" class="">C'est le moment de mettre en pratique pour le site de Robbie Lens ce que vous venez d'apprendre, en ajoutant des apparences dynamiques&nbsp;!</p><p id="r-8046324" data-claire-element-id="33396514">Pour cette étape, vous devrez :</p><ul id="r-8046327" data-claire-element-id="33396517"><li id="r-8046326" data-claire-element-id="33396516"><p id="r-8046325" data-claire-element-id="33396515">souligner les liens au survol ;</p></li></ul><ul id="r-8046333" data-claire-element-id="33397273"><li id="r-8046329" data-claire-element-id="33397272"><p id="r-8046328" data-claire-element-id="33397271">permettre aux liens ayant la classe "cta" d'avoir un dégradé de la couleur &nbsp;<code data-claire-semantic="text">#696484</code>&nbsp; à la couleur &nbsp;<code data-claire-semantic="text">#8788BA</code>&nbsp; au survol (attention, ceux-ci ne sont pas soulignés au survol)&nbsp;;</p></li><li id="r-8046332" data-claire-element-id="33396522"><p id="r-8046331" data-claire-element-id="33396521">dans les icônes de l'en-tête et du pied-de-page qui permettent de faire des liens, réduire l'opacité à 0.5 au survol.</p></li></ul><aside id="r-8046356" data-claire-element-id="33397302" data-claire-semantic="information"><p id="r-8046335" data-claire-element-id="33396525">Comme pour les autres chapitres, vous trouverez le code nécessaire pour réaliser l’exercice sur <a href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P2C5-exercice" target="_blank" rel="noopener noreferrer nofollow">la branche P2C5-exercice</a>.&nbsp;</p><p id="r-8046337" data-claire-element-id="33397301">Vous avez trouvé comment faire ?&nbsp;Allez vérifier sur&nbsp;<a href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P2C5-solution" target="_blank" rel="noopener noreferrer nofollow">la branche P2C5-solution</a>&nbsp;!</p></aside></div></div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-7" data-widget="foldable"><h3 id="r-8046357" data-claire-element-id="33450319" class="foldable__button secondTitle js-foldable-button hoveredCourseElement">En résumé<i class="foldable__icon icon-next"></i></h3><div class="foldable__content"><ul id="r-8046348" data-claire-element-id="33450318" class=""><li id="r-8046339" data-claire-element-id="33396529"><p id="r-8046338" data-claire-element-id="33396528">En CSS, on peut modifier l'apparence de certaines sections dynamiquement, après le chargement de la page, lorsque certaines interactions se produisent. On utilise pour cela les pseudo-classes.</p></li><li id="r-8046341" data-claire-element-id="33450317"><p id="r-8046340" data-claire-element-id="33450316">La pseudo-classe &nbsp;<code data-claire-semantic="text">:hover&nbsp;</code>&nbsp; modifie&nbsp;l'apparence d'un élément au survol (par exemple&nbsp;:&nbsp;<code data-claire-semantic="text">a:hover</code>&nbsp; modifie l'apparence des liens hypertextes lorsque la souris pointe dessus).</p></li><li id="r-8046343" data-claire-element-id="33397364"><p id="r-8046342" data-claire-element-id="33397363">La pseudo-classe &nbsp;<code data-claire-semantic="text">:active</code>&nbsp; modifie l'apparence des liens hypertextes au moment du clic.</p></li><li id="r-8046562" data-claire-element-id="33397366"><p id="r-8046561" data-claire-element-id="33397365">La pseudo-classe&nbsp;<code data-claire-semantic="text">:visited</code>&nbsp;modifie l'apparence des liens hypertextes lorsqu'un lien a déjà été visité.</p></li><li id="r-8046345" data-claire-element-id="33397402"><p id="r-8046344" data-claire-element-id="33397401">La pseudo-classe &nbsp;<code data-claire-semantic="text">:focus</code>&nbsp; modifie l'apparence d'un élément sélectionné&nbsp;via&nbsp;la touche "tab".</p></li><li id="r-8046347" data-claire-element-id="33397370"><p id="r-8046346" data-claire-element-id="33397369">Encore aujourd'hui, certaines propriétés ne sont pas totalement reconnues par tous les navigateurs.</p></li></ul><p id="r-8046350" data-claire-element-id="33396540"><em>Bien ! Vous commencez à vous débrouiller en CSS, mais vos pages restent encore assez désordonnées. Dans la prochaine partie, vous allez apprendre à créer de véritables mises en page à l'aide du CSS. Mais avant cela, vous allez pouvoir tester vos connaissances dans le quiz. Alors à tout de suite&nbsp;!</em></p><p id="r-8067343" data-claire-element-id="33450286"></p></div></div>
+  
+</body>
+
+</html>

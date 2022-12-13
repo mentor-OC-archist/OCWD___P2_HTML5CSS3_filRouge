@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P2C4 codepen A: Créez des bordures avec la propriété CSS border</title>
+  <style>
+    .solid {
+      border: 1px #EB5353 solid;
+    }
+
+    .double {
+      border: 4px #187498 double;
+    }
+
+    .dashed {
+      border: 2px #36AE7C dashed;
+    }
+
+    .dotted {
+      border: 3px #F9D923 dotted;
+    }
+
+    body {
+      /* Vous ne connaissez pas encore ces propriétés : pas de panique, il s'agit juste de propriétés permettant d'avoir nos carrés bein alignés */
+      display: flex;
+      flex-direction: row;
+      font-family: sans-serif;
+      gap: 10px;
+    }
+
+    .box {
+      /* Même chose ici */
+      height: 100px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="solid box">Solid</div>
+  <div class="double box">Double</div>
+  <div class="dotted box">Dotted</div>
+  <div class="dashed box">Dashed</div>
+
+</body>
+
+</html>

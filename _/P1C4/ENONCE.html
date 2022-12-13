@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P1C4: Organisez votre texte</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061265-organisez-votre-texte">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-6" data-widget="foldable">
+    <h3 id="r-8029777" data-claire-element-id="33458737" class="foldable__button secondTitle js-foldable-button">À vous
+      de jouer<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8030002" data-claire-element-id="33458736" class=""><img id="r-8030001" data-claire-element-id="33458735"
+          src="../../../../assets/YourTurn.png"
+          alt="" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-8030031" data-claire-element-id="33453405" class="">La photographe&nbsp;Robbie Lens nous a demandé de lui
+        faire un&nbsp;site web pour mettre en avant son travail. Mais il va lui falloir également une page pour se
+        présenter. Pour l'occasion, nous avons donc ajouté&nbsp;du contenu dans le fichier &nbsp;<code
+          data-claire-semantic="text"><strong>index.html</strong></code>&nbsp; et créé une nouvelle page :<code
+          data-claire-semantic="text"><strong>a-propos.html</strong></code>.</p>
+      <aside id="r-8030026" data-claire-element-id="33364885" data-claire-semantic="information">
+        <p id="r-8030016" data-claire-element-id="33364884">Vous trouverez&nbsp;la base de code pour réaliser l'exercice
+          sur <a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P1C4-exercice"
+            target="_blank" rel="noopener noreferrer nofollow">la branche GitHub P1C4-exercice</a>&nbsp;.</p>
+      </aside>
+      <p id="r-8029735" data-claire-element-id="33364894">Téléchargez les fichiers&nbsp;pour les ouvrir dans Visual
+        Studio Code&nbsp;et réaliser l'exercice. Vous allez :</p>
+      <ol id="r-8030027" data-claire-element-id="33364897" class="">
+        <li id="r-8029737" data-claire-element-id="33364896">
+          <p id="r-8029736" data-claire-element-id="33364895">créer le titre dans la page&nbsp;<code
+              data-claire-semantic="text"><strong>a-propos.html</strong></code>: "À propos de Robbie Lens"&nbsp;;</p>
+        </li>
+        <li id="r-8029739" data-claire-element-id="33363229">
+          <p id="r-8029738" data-claire-element-id="33363228">créer le paragraphe associé : "Photographe depuis plus de
+            5 ans, je réalise des reportages aux photos dynamiques et pertinentes pour vos projets de communication.
+            Créativité, qualité, et sérénité pour vous&nbsp;! Je gère tout, depuis la direction artistique, la
+            réalisation du reportage, jusqu’à la livraison de vos photos retouchées, prêtes à l’emploi."&nbsp;;</p>
+        </li>
+        <li id="r-8029741" data-claire-element-id="33364245">
+          <p id="r-8029740" data-claire-element-id="33364244">créer un titre&nbsp;de niveau 2 pour ajouter une section
+            nommée&nbsp;: "Services" ;</p>
+        </li>
+        <li id="r-8029752" data-claire-element-id="33364247">
+          <p id="r-8029742" data-claire-element-id="33364246">créer une liste non ordonnée pour lister les spécialités
+            de Robbie Lens :</p>
+          <ul id="r-8029751" data-claire-element-id="33363241">
+            <li id="r-8029744" data-claire-element-id="33363234">
+              <p id="r-8029743" data-claire-element-id="33363233">Portrait seul ou à plusieurs,</p>
+            </li>
+            <li id="r-8029746" data-claire-element-id="33363236">
+              <p id="r-8029745" data-claire-element-id="33363235">Shooting mode,</p>
+            </li>
+            <li id="r-8029748" data-claire-element-id="33363238">
+              <p id="r-8029747" data-claire-element-id="33363237">Retouches sur mesure,</p>
+            </li>
+            <li id="r-8029750" data-claire-element-id="33363240">
+              <p id="r-8029749" data-claire-element-id="33363239">Développement.&nbsp;</p>
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <aside id="r-8030011" data-claire-element-id="33365095" data-claire-semantic="information">
+        <p id="r-8029754" data-claire-element-id="33365094">À tout moment, vous pouvez faire un double-clic sur vos
+          fichiers&nbsp;<strong><code data-claire-semantic="text">.html</code></strong>&nbsp;pour les ouvrir dans votre
+          navigateur et voir le résultat. Pensez à les enregistrer régulièrement cela dit.</p>
+        <p id="r-8030021" data-claire-element-id="33364915">Un problème ? Par ici pour découvrir&nbsp;la
+          solution&nbsp;sur <a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P1C4-solution"
+            target="_blank" rel="noopener noreferrer nofollow">la branche GitHub P1C4-solution</a>.</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-7" data-widget="foldable">
+    <h3 id="r-8029778" data-claire-element-id="33449864" class="foldable__button secondTitle js-foldable-button">En
+      résumé<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <ul id="r-8029766" data-claire-element-id="33449863" class="hoveredCourseElement">
+        <li id="r-8029757" data-claire-element-id="33363247">
+          <p id="r-8029756" data-claire-element-id="33363246">Le HTML comporte de nombreuses balises qui nous permettent
+            d'organiser le texte de notre page. Ces balises donnent des indications comme “Ceci est un paragraphe”,
+            “Ceci est un titre”, etc.</p>
+        </li>
+        <li id="r-8029759" data-claire-element-id="33449856">
+          <p id="r-8029758" data-claire-element-id="33449855">Les paragraphes sont définis par la balise &nbsp;<code
+              data-claire-semantic="text">&lt;p&gt; &lt;/p&gt;</code>&nbsp; , et les sauts de ligne par la balise
+            orpheline&nbsp; &nbsp;<code data-claire-semantic="text">&lt;br&gt;</code>.</p>
+        </li>
+        <li id="r-8029761" data-claire-element-id="33449858">
+          <p id="r-8029760" data-claire-element-id="33449857">Il existe six niveaux de titre, de &nbsp;<code
+              data-claire-semantic="text">&lt;h1&gt; &lt;/h1&gt;</code>&nbsp; à &nbsp;<code
+              data-claire-semantic="text">&lt;h6&gt; &lt;/h6&gt;</code>, à utiliser selon l'importance du titre.</p>
+        </li>
+        <li id="r-8029763" data-claire-element-id="33449860">
+          <p id="r-8029762" data-claire-element-id="33449859">On peut mettre en valeur certains mots avec les balises
+            &nbsp;<code data-claire-semantic="text">&lt;strong&gt;</code>, &nbsp;<code
+              data-claire-semantic="text">&lt;em&gt;</code>&nbsp; et &nbsp;<code
+              data-claire-semantic="text">&lt;mark&gt;</code>.</p>
+        </li>
+        <li id="r-8029765" data-claire-element-id="33449862">
+          <p id="r-8029764" data-claire-element-id="33449861">Pour créer des listes, on doit utiliser la balise
+            &nbsp;<code data-claire-semantic="text">&lt;ul&gt;</code>&nbsp; (liste à puces, non ordonnée) ou &nbsp;<code
+              data-claire-semantic="text"> &lt;ol&gt;</code>&nbsp; (liste ordonnée). À l'intérieur, on insère les
+            éléments avec une balise &nbsp;<code data-claire-semantic="text">&lt;li&gt;</code>&nbsp; pour chaque item.
+          </p>
+        </li>
+      </ul>
+      <p id="r-8029767" data-claire-element-id="33365054"><em>Vous avez maintenant un peu plus d'éléments dans vos pages
+          HTML, bravo à vous. C'est maintenant le moment de commencer à interagir au sein de votre projet avec les
+          liens. Ça tombe bien&nbsp;: c'est ce qu'on voit dès maintenant dans le chapitre suivant !</em></p>
+      <p id="r-8067178" data-claire-element-id="33449805"></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

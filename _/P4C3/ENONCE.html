@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P4C3: Finalisez un formulaire et ajoutez un bouton d'envoi</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061499-finalisez-un-formulaire-et-ajoutez-un-bouton-denvoi">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-5" data-widget="foldable">
+    <h3 id="r-8055197" data-claire-element-id="33460570" class="foldable__button secondTitle js-foldable-button">À vous
+      de jouer !<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8055217" data-claire-element-id="33460569" class=""><img id="r-8055216" data-claire-element-id="33460568"
+          src="../../../../assets/YourTurn.png"
+          alt="" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-8055110" data-claire-element-id="33422280">Vous allez pouvoir créer un formulaire de contact pour Robbie
+        Lens&nbsp;!</p>
+      <aside id="r-8055218" data-claire-element-id="33422566" data-claire-semantic="information">
+        <p id="r-8055111" data-claire-element-id="33422565">Pour cela, rendez-vous sur GitHub pour avoir la base de code
+          pour faire l’exercice sur <a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P4C3-exercice"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P4C3-exercice</a>.</p>
+      </aside>
+      <p id="r-8055219" data-claire-element-id="33422567">Vous y trouverez la structure de la nouvelle section à ajouter
+        dans la page d'accueil. À vous de jouer pour&nbsp;:</p>
+      <ul id="r-8055122" data-claire-element-id="33456800">
+        <li id="r-8055113" data-claire-element-id="33422283">
+          <p id="r-8055112" data-claire-element-id="33422282">ajouter un champ nom avec le label associé&nbsp;;</p>
+        </li>
+        <li id="r-8055115" data-claire-element-id="33422285">
+          <p id="r-8055114" data-claire-element-id="33422284">ajouter un champ email avec le label associé&nbsp;;</p>
+        </li>
+        <li id="r-8055117" data-claire-element-id="33422287">
+          <p id="r-8055116" data-claire-element-id="33422286">ajouter un textarea ayant pour label message ;</p>
+        </li>
+        <li id="r-8055119" data-claire-element-id="33422289">
+          <p id="r-8055118" data-claire-element-id="33422288">créer un bouton de validation "Envoyer".&nbsp;</p>
+        </li>
+        <li id="r-8055121" data-claire-element-id="33456799">
+          <p id="r-8055120" data-claire-element-id="33456798">changer le lien du bouton “Un
+            projet?Écrivez-moi”&nbsp;pour le faire pointer vers le formulaire</p>
+        </li>
+      </ul>
+      <p id="r-8055123" data-claire-element-id="33422568">Le formulaire aura une méthode &nbsp;<code
+          data-claire-semantic="text">get</code>&nbsp; et restera vide pour l'attribut &nbsp;<code
+          data-claire-semantic="text">action</code>&nbsp; .</p>
+      <aside id="r-8055221" data-claire-element-id="33422570" data-claire-semantic="information">
+        <p id="r-8055124" data-claire-element-id="33422294">Pour ce qui est du style du formulaire, vous trouverez <a
+            href="https://openclassrooms-student-center.github.io/1603881-creez-votre-site-web-avec-html5-et-css3/index.html">le
+            résultat final du site de Robbie Lens.</a></p>
+        <p id="r-8055220" data-claire-element-id="33422569">Alors, qu’est-ce que ça donne de votre côté&nbsp;? Voici la
+          solution sur&nbsp;<a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P4C3-solution"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P4C3-solution</a>.</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-6" data-widget="foldable">
+    <h3 id="r-8055198" data-claire-element-id="33451181"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">En résumé<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <ul id="r-8055135" data-claire-element-id="33451180">
+        <li id="r-8055128" data-claire-element-id="33451179">
+          <p id="r-8055127" data-claire-element-id="33451178">Il est possible de regrouper les champs au sein d'une
+            balise &nbsp;<code data-claire-semantic="text">&lt;fieldset&gt;</code>&nbsp; qui comporte une légende, avec
+            la balise &nbsp;<code data-claire-semantic="text">&lt;legend&gt;</code>.</p>
+        </li>
+        <li id="r-8055130" data-claire-element-id="33422634">
+          <p id="r-8055129" data-claire-element-id="33422633">On peut sélectionner automatiquement un champ en
+            précisant&nbsp; l'attribut&nbsp;<code data-claire-semantic="text">autofocus</code>.</p>
+        </li>
+        <li id="r-8055132" data-claire-element-id="33422636">
+          <p id="r-8055131" data-claire-element-id="33422635">Il est également possible de rendre un champ obligatoire
+            avec l'attribut &nbsp;<code data-claire-semantic="text">required</code>.</p>
+        </li>
+        <li id="r-8055134" data-claire-element-id="33422618">
+          <p id="r-8055133" data-claire-element-id="33422617">Le bouton qui permet de valider le formulaire est créé à
+            partir d'une balise input en faisant&nbsp;: &nbsp;<code
+              data-claire-semantic="text">&lt;input type="submit" value="Envoyer"&gt;</code></p>
+        </li>
+      </ul>
+      <p id="r-8055136" data-claire-element-id="33422306"><em>Dans le prochain chapitre, nous allons voir comment rendre
+          une page responsive afin qu'elle s'adapte aux différentes tailles d'écran. Alors à tout de suite&nbsp;!</em>
+      </p>
+      <p id="r-8067639" data-claire-element-id="33451138"></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P4C1: Ajoutez des tableaux</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061455-ajoutez-des-tableaux">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-3" data-widget="foldable">
+    <h3 id="r-8061454" data-claire-element-id="33460517"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">À vous de jouer !<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8051443" data-claire-element-id="33460514" class=""><img id="r-8051442" data-claire-element-id="33460513"
+          src="../../../../assets/YourTurn.png"
+          alt="" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-8051444" data-claire-element-id="33414271">Vous allez maintenant pouvoir construire le tableau des tarifs
+        de Robbie Lens !</p>
+      <p id="r-8051792" data-claire-element-id="33414272">Vous verrez que la base de code a été réorganisée&nbsp;:</p>
+      <ul id="r-8051799" data-claire-element-id="33414279">
+        <li id="r-8051794" data-claire-element-id="33414274">
+          <p id="r-8051793" data-claire-element-id="33414273">le fichier CSS a été découpé en 4 fichiers CSS différents
+            qui se trouvent dans le dossier &nbsp;<code data-claire-semantic="text">style</code>&nbsp;;</p>
+        </li>
+        <li id="r-8051796" data-claire-element-id="33414276">
+          <p id="r-8051795" data-claire-element-id="33414275">le fichier de base &nbsp;<code
+              data-claire-semantic="text">style.css</code>&nbsp; est importé par chaque page ;</p>
+        </li>
+        <li id="r-8051798" data-claire-element-id="33414278">
+          <p id="r-8051797" data-claire-element-id="33414277">chaque page possède son propre fichier CSS.</p>
+        </li>
+      </ul>
+      <p id="r-8051800" data-claire-element-id="33414280">Vous ajouterez les tarifs à la suite de la page "À propos",
+        après le lien <em>Call to action</em> (appel à l’action).</p>
+      <p id="r-8051445" data-claire-element-id="33413060">Voilà à quoi le tableau devrait ressembler&nbsp;:</p>
+      <figure id="r-8061453" data-claire-element-id="33460516" class=""><img id="r-8051807"
+          data-claire-element-id="33414311"
+          src="../../images/P4C1h.png"
+          alt="Le tableau présente le tarif de Robbie Lens selon la quantité de photos et la prestation choisie."
+          style="cursor: -webkit-zoom-in;">
+        <figcaption>Le tableau des prix de Robbie Lens</figcaption>
+      </figure>
+      <aside id="r-8051447" data-claire-element-id="33413092" data-claire-semantic="information">
+        <p id="r-8051446" data-claire-element-id="33413091">Comme d'habitude, vous trouverez la base de code pour faire
+          l’exercice sur <a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P4C1-exercice"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P4C1-exercice</a>, et vous pouvez consulter la
+          solution sur&nbsp;<a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P4C1-solution"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P4C1-solution</a> pour vérifier vos acquis.
+        </p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-4" data-widget="foldable">
+    <h3 id="r-8051466" data-claire-element-id="33450937" class="foldable__button secondTitle js-foldable-button">En
+      résumé<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <ul id="r-8051461" data-claire-element-id="33416012" class="hoveredCourseElement">
+        <li id="r-8051450" data-claire-element-id="33416005">
+          <p id="r-8051449" data-claire-element-id="33416004">Un tableau s'insère avec la balise HTML&nbsp;&nbsp;<code
+              data-claire-semantic="text">&lt;table&gt;</code>&nbsp; et se définit ligne par ligne avec &nbsp;<code
+              data-claire-semantic="text">&lt;tr&gt;</code>.</p>
+        </li>
+        <li id="r-8051452" data-claire-element-id="33414347">
+          <p id="r-8051451" data-claire-element-id="33414346">Chaque ligne comporte des cellules &nbsp;<code
+              data-claire-semantic="text">&lt;td&gt;</code>&nbsp; (cellules normales) ou &nbsp;<code
+              data-claire-semantic="text">&lt;th&gt;&nbsp;</code>&nbsp; (cellules d'en-tête).</p>
+        </li>
+        <li id="r-8051454" data-claire-element-id="33414387">
+          <p id="r-8051453" data-claire-element-id="33414386">Le titre du tableau se définit avec &nbsp;<code
+              data-claire-semantic="text">&lt;caption&gt;</code>.</p>
+        </li>
+        <li id="r-8051456" data-claire-element-id="33416007">
+          <p id="r-8051455" data-claire-element-id="33416006">On peut ajouter une bordure aux cellules du tableau HTML
+            avec la propriété CSS&nbsp;<code data-claire-semantic="text">border</code>&nbsp; . Pour coller les bordures
+            entre elles, on utilise la propriété CSS &nbsp;<code data-claire-semantic="text">border-collapse</code>.</p>
+        </li>
+        <li id="r-8051458" data-claire-element-id="33416009">
+          <p id="r-8051457" data-claire-element-id="33416008">Un tableau peut être divisé en trois sections grâce aux
+            balises HTML&nbsp;<code data-claire-semantic="text">&lt;thead&gt;</code>&nbsp; (en-tête), &nbsp;<code
+              data-claire-semantic="text">&lt;tbody&gt;</code>&nbsp; (corps) et &nbsp;<code
+              data-claire-semantic="text">&lt;tfoot&gt;</code>&nbsp; (bas du tableau). L'utilisation de ces balises
+            n'est pas obligatoire.</p>
+        </li>
+        <li id="r-8051460" data-claire-element-id="33416011">
+          <p id="r-8051459" data-claire-element-id="33416010">En HTML, on peut fusionner des cellules horizontalement
+            avec l'attribut &nbsp;<code data-claire-semantic="text">colspan</code>, ou verticalement avec &nbsp;<code
+              data-claire-semantic="text">rowspan</code>. Il faut indiquer combien de cellules doivent être fusionnées.
+          </p>
+        </li>
+      </ul>
+      <p id="r-8051462" data-claire-element-id="33413077"><em>Dans le chapitre suivant, on va apprendre à créer des
+          formulaires. Alors à tout de suite&nbsp;!</em></p>
+      <p id="r-8067573" data-claire-element-id="33450936"></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

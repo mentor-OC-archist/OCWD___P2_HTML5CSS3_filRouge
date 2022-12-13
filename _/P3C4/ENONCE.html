@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P3C4: Découvrez les bases de CSS Grids</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061410-decouvrez-les-bases-de-css-grids">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-7" data-widget="foldable">
+    <h3 id="r-8050425" data-claire-element-id="33460378"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">À vous de jouer !<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8050379" data-claire-element-id="33460377" class=""><img id="r-8050378" data-claire-element-id="33460376"
+          src="../../../../assets/YourTurn.png"
+          alt="" style="cursor: -webkit-zoom-in;"></p>
+      <aside id="r-8050426" data-claire-element-id="33410311" data-claire-semantic="information">
+        <p id="r-8050380" data-claire-element-id="33410255">Vous allez maintenant pouvoir tirer parti des grids pour le
+          portfolio de Robbie Lens&nbsp;! Comme d’habitude, retrouvez sur GitHub la base de code nécessaire pour faire
+          l’exercice sur <a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P3C4-exercice"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P3C4-exercice</a>.&nbsp;</p>
+      </aside>
+      <p id="r-8050382" data-claire-element-id="33410601">Vous trouverez une nouvelle page portfolio. La base de la page
+        a déjà été codée, et ajoutée dans le header. De nouvelles images ont également été importées dans &nbsp;<code
+          data-claire-semantic="text">../images/portfolio</code>&nbsp; .</p>
+      <p id="r-8050383" data-claire-element-id="33410258">À partir de là, vous devrez coder deux grids&nbsp;:</p>
+      <ol id="r-8050516" data-claire-element-id="33410602">
+        <li id="r-8050385" data-claire-element-id="33410260">
+          <p id="r-8050384" data-claire-element-id="33410259">une première grid avec les images dont le nom commence par
+            "paysage". Elle comprend 3 colonnes et 3 rangées&nbsp;;</p>
+        </li>
+        <li id="r-8050388" data-claire-element-id="33410263">
+          <p id="r-8050387" data-claire-element-id="33410262">une deuxième grid de 3 colonnes et 2 rangées, avec les
+            images dont le nom commence par "portrait".</p>
+        </li>
+      </ol>
+      <p id="r-8050391" data-claire-element-id="33410603">Les colonnes devront s'adapter à la largeur de l'écran, et les
+        rangées feront &nbsp;<code data-claire-semantic="text">300px</code>&nbsp; de haut, avec un écart de &nbsp;<code
+          data-claire-semantic="text">15px</code>.</p>
+      <p id="r-8050392" data-claire-element-id="33410604" class="">Même si nous ne verrons pas ces propriétés dans ce
+        cours, vous aurez besoin du bout de code dans les sélecteurs &nbsp;<code
+          data-claire-semantic="text">.grid-paysages img</code>&nbsp; et &nbsp;<code
+          data-claire-semantic="text">.grid-portraits img</code>&nbsp; afin que la taille de vos images s'adaptent à la
+        taille de votre grid.</p>
+      <p id="r-8050394" data-claire-element-id="33410269">Les images des deux grids font la même taille.</p>
+      <p id="r-8050395" data-claire-element-id="33410270">Vous êtes aussi libre de vous exercer sur des formats plus
+        élaborés qui ressemblent aux exemples vus dans le chapitre.</p>
+      <aside id="r-8050436" data-claire-element-id="33410612" data-claire-semantic="information">
+        <p id="r-8050397" data-claire-element-id="33410611">Comme d'habitude, vous pouvez consulter la solution
+          sur&nbsp;<a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P3C4-solution"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P3C4-solution</a>.</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-8" data-widget="foldable">
+    <h3 id="r-8050437" data-claire-element-id="33450728" class="foldable__button secondTitle js-foldable-button">En
+      résumé<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <ul id="r-8050421" data-claire-element-id="33410639" class="">
+        <li id="r-8050399" data-claire-element-id="33410274">
+          <p id="r-8050398" data-claire-element-id="33410273">Les CSS Grids sont complémentaires à Flexbox et permettent
+            de créer facilement des mises en page plus élaborées que Flexbox, sans forcément avoir des éléments de la
+            même taille.</p>
+        </li>
+        <li id="r-8050401" data-claire-element-id="33410622">
+          <p id="r-8050400" data-claire-element-id="33410621">Pour déclarer une grid, on déclare simplement &nbsp;<code
+              data-claire-semantic="text">display: grid;</code>&nbsp; sur le conteneur&nbsp;: notre navigateur comprend
+            tout de suite que nos éléments sont dans la grid.</p>
+        </li>
+        <li id="r-8050403" data-claire-element-id="33410624">
+          <p id="r-8050402" data-claire-element-id="33410623">On définit les colonnes avec&nbsp;<code
+              data-claire-semantic="text">grid-template-columns</code>&nbsp; et les rangées avec&nbsp;<code
+              data-claire-semantic="text">grid-template-rows</code>&nbsp;: en fonction du nombre de valeurs passées, de
+            nouvelles colonnes et rangées sont créées.</p>
+        </li>
+        <li id="r-8050405" data-claire-element-id="33410626">
+          <p id="r-8050404" data-claire-element-id="33410625">En plus des unités classiques &nbsp;<code
+              data-claire-semantic="text">px</code>&nbsp; , &nbsp;<code data-claire-semantic="text">em</code>&nbsp; ,
+            &nbsp;<code data-claire-semantic="text">rem</code>&nbsp; et &nbsp;<code
+              data-claire-semantic="text">%</code>&nbsp; , les &nbsp;<code data-claire-semantic="text">fr</code>&nbsp;
+            sont encore plus simples, et permettent d'indiquer une fraction de la grille.</p>
+        </li>
+        <li id="r-8050407" data-claire-element-id="33410628">
+          <p id="r-8050406" data-claire-element-id="33410627"><code data-claire-semantic="text">gap</code>&nbsp; permet
+            d'espacer les éléments entre eux.</p>
+        </li>
+        <li id="r-8050409" data-claire-element-id="33410284">
+          <p id="r-8050408" data-claire-element-id="33410283">Les grids créent implicitement des lignes horizontales et
+            verticales délimitant les différentes rangées et colonnes.</p>
+        </li>
+        <li id="r-8050420" data-claire-element-id="33410638">
+          <p id="r-8050410" data-claire-element-id="33410285">Chaque élément peut avoir :</p>
+          <ul id="r-8050419" data-claire-element-id="33410637">
+            <li id="r-8050412" data-claire-element-id="33410630">
+              <p id="r-8050411" data-claire-element-id="33410629">son propre point de départ horizontal avec &nbsp;<code
+                  data-claire-semantic="text">grid-row-start</code>&nbsp; ;</p>
+            </li>
+            <li id="r-8050414" data-claire-element-id="33410632">
+              <p id="r-8050413" data-claire-element-id="33410631">son point d'arrivée horizontal avec &nbsp;<code
+                  data-claire-semantic="text">grid-row-end</code>&nbsp; ;</p>
+            </li>
+            <li id="r-8050416" data-claire-element-id="33410634">
+              <p id="r-8050415" data-claire-element-id="33410633">son point de départ vertical avec &nbsp;<code
+                  data-claire-semantic="text">grid-column-start</code>&nbsp; ;</p>
+            </li>
+            <li id="r-8050418" data-claire-element-id="33410636">
+              <p id="r-8050417" data-claire-element-id="33410635">et son point d'arrivée vertical avec &nbsp;<code
+                  data-claire-semantic="text">grid-column-end</code>&nbsp; .</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p id="r-8050423" data-claire-element-id="33410371"><em>Et voilà, c'est tout pour le moment sur les grids. Vous
+          commencez à disposer de pas mal d'outils de mise en page CSS. C'est normal si cela vous ne paraît pas encore
+          très clair pour l'instant, mais vous verrez&nbsp;:&nbsp;avec la pratique, ça finit par rentrer&nbsp;! En
+          attendant, on se retrouve dans le dernier chapitre de la partie, qui nous permettra d'aborder d'autres
+          techniques de mise en page en CSS. Alors à tout de suite&nbsp;!</em></p>
+      <p id="r-8067506" data-claire-element-id="33450727"></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

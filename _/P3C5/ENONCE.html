@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P3C5: Abordez d'autres techniques de mise en page</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061421-abordez-dautres-techniques-de-mise-en-page">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-6" data-widget="foldable">
+    <h3 id="r-8061420" data-claire-element-id="33460420" class="foldable__button secondTitle js-foldable-button">À vous
+      de jouer !<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8050928" data-claire-element-id="33460417" class="hoveredCourseElement"><img id="r-8050927"
+          data-claire-element-id="33460416"
+          src="../../../../assets/YourTurn.png"
+          alt="" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-8050859" data-claire-element-id="33412708">Vous allez maintenant pouvoir exploiter ce que vous venez
+        d'apprendre dans le portfolio de Robbie Lens. Les images de la page "Portfolio" peuvent maintenant s'afficher en
+        plein écran avec la méthode vue dans le chapitre “Insérez des images”. Pour cela, des liens ont été ajoutés avec
+        la classe &nbsp;<code data-claire-semantic="text">lien-conteneur-photo</code>&nbsp; .</p>
+      <aside id="r-8050931" data-claire-element-id="33411562" data-claire-semantic="information" class="">
+        <p id="r-8050861" data-claire-element-id="33411561">Vous pouvez retrouver sur GitHub la base de code pour faire
+          l’exercice sur <a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P3C5-exercice"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P3C5-exercice</a>.&nbsp;</p>
+      </aside>
+      <p id="r-8050863" data-claire-element-id="33411448">Pour ce chapitre, vous allez :</p>
+      <ul id="r-8050875" data-claire-element-id="33412812">
+        <li id="r-8050865" data-claire-element-id="33412789">
+          <p id="r-8050864" data-claire-element-id="33412788">transformer les liens qui ont la classe &nbsp;<code
+              data-claire-semantic="text">.cta</code>&nbsp; en éléments &nbsp;<code
+              data-claire-semantic="text">inline-block</code>&nbsp; avec &nbsp;<code
+              data-claire-semantic="text">display</code>&nbsp; sur les pages "Accueil" et "À propos", et ajouter leur
+            lien vers la page "Portfolio" ; (cta veut dire <em>call to action</em> en anglais, autrement dit, en
+            français : "bouton d'appel à l'action") ;</p>
+        </li>
+        <li id="r-8050867" data-claire-element-id="33412712">
+          <p id="r-8050866" data-claire-element-id="33412711">ajouter des &nbsp;<code
+              data-claire-semantic="text">margin</code>&nbsp; et &nbsp;<code
+              data-claire-semantic="text">padding</code>&nbsp; là où il en manque sur les pages "Accueil" et "À propos"
+            (pour rappel, voici la <a
+              href="https://www.figma.com/file/NVYRZOyTIP05ScWbS5gEo4/OC---Brouillon-HTML-%2F-CSS-desktop-%26-mobile?node-id=2%3A459"
+              target="_blank" rel="noopener noreferrer nofollow">maquette</a> d’inspiration pour le site)&nbsp;;</p>
+        </li>
+        <li id="r-8050874" data-claire-element-id="33412811">
+          <p id="r-8050868" data-claire-element-id="33412713">créer sur les images un effet au survol de la souris en
+            affichant un élément (grâce à&nbsp;<code data-claire-semantic="text">display</code>&nbsp;) qui&nbsp;:</p>
+          <ul id="r-8050873" data-claire-element-id="33412810">
+            <li id="r-8050870" data-claire-element-id="33412715">
+              <p id="r-8050869" data-claire-element-id="33412714">aura un fond noir d’une opacité de &nbsp;<code
+                  data-claire-semantic="text">70%</code>&nbsp; ;</p>
+            </li>
+            <li id="r-8050872" data-claire-element-id="33412809">
+              <p id="r-8050871" data-claire-element-id="33412808">s’affichera par-dessus l’image, et y mentionnera le
+                texte suivant&nbsp;: “Voir la photo”, comme ceci :</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <figure id="r-8061419" data-claire-element-id="33460419"><img id="r-8051243" data-claire-element-id="33412828"
+          src="../../images/P3C5f.png"
+          alt="La photo prend un fond noir opaque à 70% et fait apparaître le texte Voir la photo au survol de la souris sur l'image.">
+        <figcaption>Avant et après le passage de la souris sur l'image</figcaption>
+      </figure>
+      <aside id="r-8050932" data-claire-element-id="33411564" data-claire-semantic="information" class="">
+        <p id="r-8050878" data-claire-element-id="33411563">Et voici la solution de l'exercice sur&nbsp;<a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P3C5-solution"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P3C5-solution</a>.</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-7" data-widget="foldable">
+    <h3 id="r-8050900" data-claire-element-id="33450886"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">En résumé<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <ul id="r-8050899" data-claire-element-id="33450885">
+        <li id="r-8050890" data-claire-element-id="33450882">
+          <p id="r-8050880" data-claire-element-id="33412738">La propriété &nbsp;<code
+              data-claire-semantic="text">display</code>&nbsp; permet de changer le comportement de base d'un
+            élément&nbsp;:&nbsp;</p>
+          <ul id="r-8050889" data-claire-element-id="33450881">
+            <li id="r-8050882" data-claire-element-id="33412740">
+              <p id="r-8050881" data-claire-element-id="33412739">transformer un élément &nbsp;<code
+                  data-claire-semantic="text">inline</code>&nbsp; en &nbsp;<code
+                  data-claire-semantic="text">block</code>&nbsp; ;</p>
+            </li>
+            <li id="r-8050884" data-claire-element-id="33412742">
+              <p id="r-8050883" data-claire-element-id="33412741">inversement, un élément &nbsp;<code
+                  data-claire-semantic="text">block</code>&nbsp; en &nbsp;<code
+                  data-claire-semantic="text">inline</code>&nbsp; ;</p>
+            </li>
+            <li id="r-8050886" data-claire-element-id="33450880">
+              <p id="r-8050885" data-claire-element-id="33450879">mais aussi de faire un mélange des deux avec
+                &nbsp;<code data-claire-semantic="text">inline-block</code>.</p>
+            </li>
+          </ul>
+        </li>
+        <li id="r-8050892" data-claire-element-id="33411477">
+          <p id="r-8050891" data-claire-element-id="33411476">Le positionnement relatif permet de décaler un bloc par
+            rapport à sa position normale.</p>
+        </li>
+        <li id="r-8050894" data-claire-element-id="33411479">
+          <p id="r-8050893" data-claire-element-id="33411478">Le positionnement absolu permet de placer un élément où
+            l'on souhaite sur la page, au pixel près.</p>
+        </li>
+        <li id="r-8050896" data-claire-element-id="33411481">
+          <p id="r-8050895" data-claire-element-id="33411480">Un élément A positionné en absolu à l'intérieur d'un autre
+            élément B (lui-même positionné en absolu, fixe ou relatif) se positionne par rapport à l'élément B, et non
+            par rapport au coin en haut à gauche de la page.</p>
+        </li>
+        <li id="r-8050898" data-claire-element-id="33450884">
+          <p id="r-8050897" data-claire-element-id="33450883">Lorsque plusieurs éléments s'empilent, il est possible de
+            les ordonner avec &nbsp;<code data-claire-semantic="text">z-index</code>.</p>
+        </li>
+      </ul>
+      <p id="r-8067538" data-claire-element-id="33450809"></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

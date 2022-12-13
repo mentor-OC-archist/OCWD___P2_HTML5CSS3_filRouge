@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P2C1: Intégrez le CSS dans la page HTML</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061278-integrez-le-css-dans-la-page-html">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-8" data-widget="foldable">
+    <h3 id="r-8031780" data-claire-element-id="33459764"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">À vous de jouer !<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8032047" data-claire-element-id="33459763" class=""><img id="r-8032046" data-claire-element-id="33459762"
+          src="../../../../assets/YourTurn.png"
+          alt="" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-8031730" data-claire-element-id="33370511">Vous allez exploiter ce que vous venez d'apprendre, et le
+        mettre à profit dans le projet de Robbie Lens.</p>
+      <aside id="r-8032036" data-claire-element-id="33370452" data-claire-semantic="information">
+        <p id="r-8031732" data-claire-element-id="33370451">Pour cela, vous trouverez la base de code pour démarrer
+          l'exercice sur la <a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P2C1-exercice"
+            target="_blank" rel="noopener noreferrer nofollow">branche P2C1-exercice</a>.&nbsp;</p>
+      </aside>
+      <p id="r-8031734" data-claire-element-id="33369044">Ici, vous allez :</p>
+      <ul id="r-8031745" data-claire-element-id="33443923">
+        <li id="r-8031736" data-claire-element-id="33370482">
+          <p id="r-8031735" data-claire-element-id="33370481">créer un fichier CSS commun&nbsp;<strong><code
+                data-claire-semantic="text">style.css</code></strong>;</p>
+        </li>
+        <li id="r-8031738" data-claire-element-id="33370484">
+          <p id="r-8031737" data-claire-element-id="33370483">appliquer la couleur<code
+              data-claire-semantic="text"><strong>black</strong></code>à l'ensemble des liens&nbsp;;</p>
+        </li>
+        <li id="r-8031740" data-claire-element-id="33370522">
+          <p id="r-8031739" data-claire-element-id="33370521">mettre le logo et les liens de navigation en haut des
+            pages "Accueil" et "À propos" dans une balise&nbsp;<code
+              data-claire-semantic="text"><strong>div</strong></code>&nbsp;;</p>
+        </li>
+        <li id="r-8031742" data-claire-element-id="33371612">
+          <p id="r-8031741" data-claire-element-id="33371611">mettre les différents logos en bas des deux pages dans une
+            autre&nbsp;<code data-claire-semantic="text"><strong>div</strong></code>&nbsp;;</p>
+        </li>
+        <li id="r-8031744" data-claire-element-id="33443922">
+          <p id="r-8031743" data-claire-element-id="33443921">sur la page d'accueil, dans le paragraphe d'introduction,
+            vous allez appliquer le style suivant&nbsp;:<code
+              data-claire-semantic="text"><strong>color: #A5B4FC;</strong></code>&nbsp;au mot "professionnalisme" et au
+            mot "passion". Pour l'instant, vous utiliserez un &nbsp;<code
+              data-claire-semantic="text"><strong>&lt;span&gt;</strong></code>&nbsp; , mais nous le modifierons dans le
+            prochain chapitre pour utiliser&nbsp;<code data-claire-semantic="text"><strong>&lt;em&gt;</strong></code>.
+          </p>
+        </li>
+      </ul>
+      <aside id="r-8032041" data-claire-element-id="33370493" data-claire-semantic="information" class="">
+        <p id="r-8031747" data-claire-element-id="33370492">Un blocage ? Retrouvez le corrigé sur la&nbsp;<a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P2C1-solution"
+            target="_blank" rel="noopener noreferrer nofollow">branche P2C1-solution</a>.</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-9" data-widget="foldable">
+    <h3 id="r-8031781" data-claire-element-id="33449943" class="foldable__button secondTitle js-foldable-button">En
+      résumé<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <ul id="r-8031755" data-claire-element-id="33435400" class="hoveredCourseElement">
+        <li id="r-8031750" data-claire-element-id="33369060">
+          <p id="r-8031749" data-claire-element-id="33369059">CSS est un autre langage qui vient compléter le HTML. Son
+            rôle est de mettre en forme votre page web.</p>
+        </li>
+        <li id="r-8031752" data-claire-element-id="33435369">
+          <p id="r-8031751" data-claire-element-id="33435368">Pour écrire le code CSS, on crée un fichier séparé portant
+            l'extension&nbsp;<code data-claire-semantic="text">.css</code>&nbsp; comme&nbsp;<code
+              data-claire-semantic="text">style.css</code>.</p>
+        </li>
+        <li id="r-8033269" data-claire-element-id="33435399">
+          <p id="r-8033268" data-claire-element-id="33435398">Pour lier les fichiers&nbsp;CSS&nbsp;et&nbsp;HTML, on
+            rajoute une ligne dans la balise&nbsp;<code
+              data-claire-semantic="text">&lt;head&gt; &lt;/head&gt;</code>&nbsp;du fichier HTML : &nbsp;<code
+              data-claire-semantic="text">&lt;link href="style.css" rel="stylesheet"&gt;</code></p>
+        </li>
+        <li id="r-8031754" data-claire-element-id="33369064">
+          <p id="r-8031753" data-claire-element-id="33369063">En CSS, on sélectionne les portions de la page HTML qu'on
+            veut modifier, et on change leur présentation avec des propriétés CSS :</p>
+        </li>
+      </ul>
+      <pre id="r-8033126" data-claire-element-id="33371631" class="code-block"><code data-claire-semantic="css" data-code="{&quot;language&quot;:&quot;css&quot;,&quot;source&quot;:&quot;balise1\n{\n    propriete1: valeur1;\n    propriete2: valeur2;\n}&quot;}" class="ace" data-widget="codeBlock"><div class="ace-openclassrooms"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_constant">balise1</span>
+  </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_lparen">{</span>
+  </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    propriete1: valeur1;
+  </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    propriete2: valeur2;
+  </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+  </div></div></div></code><textarea class="code-block--raw-code"></textarea></pre>
+      <ul id="r-8031770" data-claire-element-id="33435377" class="">
+        <li id="r-8031769" data-claire-element-id="33435376">
+          <p id="r-8031761" data-claire-element-id="33371651">Il existe&nbsp;plusieurs façons de sélectionner la portion
+            de page que l'on veut mettre en forme. Par exemple, on peut viser :</p>
+          <ul id="r-8031768" data-claire-element-id="33435375">
+            <li id="r-8031763" data-claire-element-id="33435344">
+              <p id="r-8031762" data-claire-element-id="33435343">toutes les balises d'un même type, en écrivant
+                simplement leur nom (<code data-claire-semantic="text">h1</code>par exemple)&nbsp;;</p>
+            </li>
+            <li id="r-8031765" data-claire-element-id="33435374">
+              <p id="r-8031764" data-claire-element-id="33435373">certaines balises spécifiques, auxquelles on a donné
+                des noms à l'aide des attributs&nbsp;<code data-claire-semantic="text">class</code>&nbsp;ou<code
+                  data-claire-semantic="text">id</code>(<code
+                  data-claire-semantic="text">.nom-classe</code>&nbsp;ou&nbsp;<code
+                  data-claire-semantic="text">#nom-id</code>)&nbsp;;</p>
+            </li>
+            <li id="r-8031767" data-claire-element-id="33435348">
+              <p id="r-8031766" data-claire-element-id="33435347">uniquement les balises qui se trouvent à l'intérieur
+                d'autres balises (<code data-claire-semantic="text">h3</code>,<code
+                  data-claire-semantic="text">em</code>).</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p id="r-8031771" data-claire-element-id="33369081" class=""><em>Vous avez maintenant appliqué du style à votre
+          projet&nbsp;! Bravo à vous. Dans le chapitre suivant, vous allez apprendre à utiliser d'autres propriétés CSS
+          pour donner forme à votre texte. Alors, à tout de suite&nbsp;!</em></p>
+      <p id="r-8067230" data-claire-element-id="33449942"></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

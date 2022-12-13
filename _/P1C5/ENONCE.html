@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P1C5: Créez un lien hypertexte en HTML</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/1604646-creez-un-lien-hypertexte-en-html">Chapitre du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-3" data-widget="foldable">
+    <h3 id="r-8030458" data-claire-element-id="33458744" class="foldable__button secondTitle js-foldable-button">À vous
+      de jouer<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8030462" data-claire-element-id="33458743" class="hoveredCourseElement"><img id="r-8030461"
+          data-claire-element-id="33458742"
+          src="../../../../assets/YourTurn.png"
+          alt="" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-8030414" data-claire-element-id="33366591" class="">Vous allez maintenant pouvoir mettre en pratique ce
+        que vous venez d'apprendre sur les liens. Exceptionnellement pour cet exercice, la page &nbsp;<code
+          data-claire-semantic="text">a-propos.html</code>&nbsp; a été déplacée dans un dossier &nbsp;<code
+          data-claire-semantic="text">dossier-demo</code>&nbsp; afin que vous puissiez tester votre compréhension des
+        liens relatifs.</p>
+      <p id="r-8030415" data-claire-element-id="33365232">Pour cet exercice, votre mission, si vous l'acceptez, est
+        de&nbsp;:</p>
+      <ul id="r-8030427" data-claire-element-id="33366596">
+        <li id="r-8030417" data-claire-element-id="33366593">
+          <p id="r-8030416" data-claire-element-id="33366592">créer&nbsp;sur la page d'accueil un lien vers la page "À
+            propos" (sans déplacer les fichiers)&nbsp;;</p>
+        </li>
+        <li id="r-8030419" data-claire-element-id="33366595">
+          <p id="r-8030418" data-claire-element-id="33366594">créer&nbsp;sur la page &nbsp;<code
+              data-claire-semantic="text">a-propos.html</code>&nbsp; un lien vers la page d'accueil (sans déplacer les
+            fichiers)&nbsp;;</p>
+        </li>
+        <li id="r-8030426" data-claire-element-id="33365243">
+          <p id="r-8030420" data-claire-element-id="33365237">ajouter les liens vers les réseaux sociaux (qui s'ouvrent
+            dans un nouvel onglet) sur la page d'accueil et la page "À propos"&nbsp;:</p>
+          <ul id="r-8030425" data-claire-element-id="33365242">
+            <li id="r-8030422" data-claire-element-id="33365239">
+              <p id="r-8030421" data-claire-element-id="33365238">pour Twitter, vous redirigerez vers "<a
+                  href="https://twitter.com/" target="_blank"
+                  rel="noopener noreferrer nofollow">https://twitter.com/</a>",</p>
+            </li>
+            <li id="r-8030424" data-claire-element-id="33365241">
+              <p id="r-8030423" data-claire-element-id="33365240">pour Instagram, le lien pointe vers "<a
+                  href="https://www.instagram.com/" target="_blank"
+                  rel="noopener noreferrer nofollow">https://www.instagram.com/</a>".</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <aside id="r-8030466" data-claire-element-id="33365322" data-claire-semantic="information">
+        <p id="r-8030428" data-claire-element-id="33365311">Vous trouverez la base de code nécessaire pour débuter cet
+          exercice sur <a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P1C5-exercice"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P1C5-exercice</a>. Pour vous aider si vous
+          êtes bloqué, la solution se trouve sur&nbsp;<a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P1C5-solution"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P1C5-solution</a>.</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-4" data-widget="foldable">
+    <h3 id="r-8030459" data-claire-element-id="33449883"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">En résumé<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <ul id="r-8030439" data-claire-element-id="33366609">
+        <li id="r-8030432" data-claire-element-id="33366602">
+          <p id="r-8030431" data-claire-element-id="33366601">Un&nbsp;lien hypertexte (ou hyperlien) permet de changer
+            de page. Par défaut, il est en bleu et souligné dans le navigateur mais on peut modifier ce style en CSS.
+          </p>
+        </li>
+        <li id="r-8030434" data-claire-element-id="33366604">
+          <p id="r-8030433" data-claire-element-id="33366603">Pour&nbsp;faire&nbsp;un lien hypertexte vers un site web
+            existant, on utilise la balise &nbsp;<code data-claire-semantic="text">&lt;a&gt;</code>&nbsp; avec
+            l'attribut &nbsp;<code data-claire-semantic="text">href</code>&nbsp;pour indiquer <strong>l'adresse de la
+              page web cible</strong>. Il s'agit d'un <strong>lien absolu</strong>. Exemple&nbsp;: &nbsp;<code
+              data-claire-semantic="text">&lt;a href="https://openclassrooms.com"&gt;</code>&nbsp;.</p>
+        </li>
+        <li id="r-8030436" data-claire-element-id="33366606">
+          <p id="r-8030435" data-claire-element-id="33366605">Pour faire un lien hypertexte vers une autre page de son
+            site, on utilise la balise&nbsp;<code data-claire-semantic="text">&lt;a&gt;</code>&nbsp; avec l'attribut
+            &nbsp;<code data-claire-semantic="text">href</code>&nbsp;pour indiquer <strong>le nom du fichier en
+              local</strong>. Il s'agit d'un <strong>lien relatif</strong>. Exemple : &nbsp;<code
+              data-claire-semantic="text">&lt;a href="page2.html"&gt;</code>&nbsp;.</p>
+        </li>
+        <li id="r-8030438" data-claire-element-id="33366608">
+          <p id="r-8030437" data-claire-element-id="33366607">Un lien hypertexte peut aussi&nbsp;permettre&nbsp;d'amener
+            vers&nbsp;un endroit précis&nbsp;d'une page. Il faut créer une ancre avec l'attribut &nbsp;<code
+              data-claire-semantic="text">id</code>&nbsp; pour “marquer” cet endroit dans la page, puis faire un lien
+            vers l'ancre comme ceci&nbsp;: &nbsp;<code data-claire-semantic="text">&lt;a href="#ancre"&gt;</code>&nbsp;.
+          </p>
+        </li>
+      </ul>
+      <p id="r-8030440" data-claire-element-id="33367591" class=""><em>On se retrouve tout de suite pour le dernier
+          chapitre de la partie, qui vous permettra d'insérer de magnifiques images dans vos pages web !</em></p>
+      <p id="r-8067207" data-claire-element-id="33449882"></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

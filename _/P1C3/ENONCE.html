@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P1C3: Créez votre première page web en HTML</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061261-creez-votre-premiere-page-web-en-html">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-5" data-widget="foldable">
+    <h3 id="r-8029312" data-claire-element-id="33458726"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">À vous de jouer !<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8029353" data-claire-element-id="33458725" class=""><img id="r-8029352" data-claire-element-id="33458724"
+          src="../../../../assets/YourTurn.png"
+          alt="" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-8029273" data-claire-element-id="33362058" class="">C'est maintenant le moment de mettre en pratique ce
+        que vous avez appris.</p>
+      <p id="r-8029274" data-claire-element-id="33443660" class="">Pour cet exercice, vous allez devoir partir de votre
+        fichier &nbsp;<code data-claire-semantic="text">index.html</code>&nbsp; que vous venez de créer&nbsp;pour :</p>
+      <ul id="r-8029281" data-claire-element-id="33368306" class="">
+        <li id="r-8029276" data-claire-element-id="33362061">
+          <p id="r-8029275" data-claire-element-id="33362060">y insérer la structure de base HTML ;</p>
+        </li>
+        <li id="r-8029278" data-claire-element-id="33362685">
+          <p id="r-8029277" data-claire-element-id="33362684">changer le contenu de la balise &nbsp;<code
+              data-claire-semantic="text">&lt;title&gt; &lt;/title&gt;</code>&nbsp; pour avoir “Accueil – Robbie Lens
+            Photographie”&nbsp;;</p>
+        </li>
+        <li id="r-8029280" data-claire-element-id="33368305">
+          <p id="r-8029279" data-claire-element-id="33368304">écrire&nbsp;un commentaire dans&nbsp;<code
+              data-claire-semantic="text">&lt;body&gt; &lt;/body&gt;</code>&nbsp;.</p>
+        </li>
+      </ul>
+      <aside id="r-8029452" data-claire-element-id="33362689" data-claire-semantic="information" class="">
+        <p id="r-8029282" data-claire-element-id="33362067">Ici, vous partirez de zéro dans un fichier depuis Visual
+          Studio Code pour commencer cet exercice. Un peu perdu&nbsp;? Pas de panique, voici <a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P1C3-solution"
+            target="_blank" rel="noopener noreferrer nofollow">le corrigé de l'exercice P1C3</a>.</p>
+      </aside>
+      <p id="r-8029283" data-claire-element-id="33362068" class="">En cliquant sur le lien du corrigé, vous allez
+        arriver sur la branche P1C3-solution&nbsp;:</p>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-6" data-widget="foldable">
+    <h3 id="r-8029313" data-claire-element-id="33449745" class="foldable__button secondTitle js-foldable-button">En
+      résumé<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <ul id="r-8029301" data-claire-element-id="33362736" class="">
+        <li id="r-8029287" data-claire-element-id="33362711">
+          <p id="r-8029286" data-claire-element-id="33362710">Pour créer une page web, on crée un fichier ayant
+            l'extension &nbsp;<code data-claire-semantic="text">.html</code>&nbsp; , qui pourra être ouvert dans le
+            navigateur web simplement en faisant un double-clic dessus.</p>
+        </li>
+        <li id="r-8029289" data-claire-element-id="33362074">
+          <p id="r-8029288" data-claire-element-id="33362073">Chaque fichier HTML est constitué de balises.</p>
+        </li>
+        <li id="r-8029296" data-claire-element-id="33362717">
+          <p id="r-8029290" data-claire-element-id="33362075">Les balises peuvent avoir plusieurs formes&nbsp;:</p>
+          <ul id="r-8029295" data-claire-element-id="33362716">
+            <li id="r-8029292" data-claire-element-id="33362713">
+              <p id="r-8029291" data-claire-element-id="33362712"><code
+                  data-claire-semantic="text">&lt;balise&gt; &lt;/balise&gt;</code>&nbsp; : <strong>balises en
+                  paires</strong>, elles s'ouvrent et se ferment pour délimiter le contenu (début et fin d'un titre, par
+                exemple)&nbsp;;</p>
+            </li>
+            <li id="r-8029294" data-claire-element-id="33362715">
+              <p id="r-8029293" data-claire-element-id="33362714"><code
+                  data-claire-semantic="text">&lt;balise&gt;</code>&nbsp; : <strong>balises orphelines</strong> (on ne
+                les insère qu'en un seul exemplaire), elles permettent d'insérer un élément à un endroit précis (par
+                exemple une image).</p>
+            </li>
+          </ul>
+        </li>
+        <li id="r-8029298" data-claire-element-id="33362719">
+          <p id="r-8029297" data-claire-element-id="33362718">Les balises sont parfois accompagnées d'attributs pour
+            donner des indications supplémentaires, ou paramétrer un élément (exemple&nbsp;: &nbsp;<code
+              data-claire-semantic="text">&lt;img src="photo.jpg"&gt;</code>&nbsp; ).</p>
+        </li>
+        <li id="r-8029300" data-claire-element-id="33362735">
+          <p id="r-8029299" data-claire-element-id="33362734">Une page web est constituée de deux sections
+            principales&nbsp;: l'en-tête<code data-claire-semantic="text">&lt;head&gt; &lt;/head&gt;</code>&nbsp; dont
+            le contenu n'apparaît pas dans l'affichage de la page et le corps&nbsp;<code
+              data-claire-semantic="text">&lt;body&gt; &lt;/body&gt;</code>&nbsp; qui, lui, apparaît.</p>
+        </li>
+      </ul>
+      <p id="r-8029302" data-claire-element-id="33362087"><em>Félicitations ! Vous avez créé votre première page
+          web&nbsp;! Vous pouvez être fier de vous&nbsp;! Dans le chapitre suivant, nous allons rentrer un peu plus dans
+          le détail, en apprenant à organiser son texte en HTML. Alors à tout de suite&nbsp;!&nbsp;</em></p>
+      <p id="r-8029303" data-claire-element-id="33362088"></p>
+      <p id="r-8067161" data-claire-element-id="33449744"></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

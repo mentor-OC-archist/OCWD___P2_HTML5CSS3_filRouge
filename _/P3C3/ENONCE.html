@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P3C3: Faites votre mise en page avec Flexbox</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061384-faites-votre-mise-en-page-avec-flexbox">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-7" data-widget="foldable">
+    <h3 id="r-8049131" data-claire-element-id="33460336"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">À vous de jouer !<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-8049091" data-claire-element-id="33460335" class=""><img id="r-8049090" data-claire-element-id="33460334"
+          src="../../../../assets/YourTurn.png"
+          alt="" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-8049092" data-claire-element-id="33409121">Maintenant que vous maîtrisez les propriétés de Flexbox, nous
+        allons en profiter pour mettre en forme les pages du portfolio de Robbie Lens&nbsp;!</p>
+      <aside id="r-8049870" data-claire-element-id="33457552" data-claire-semantic="information">
+        <p id="r-8049869" data-claire-element-id="33457550">À partir de maintenant, la mise en page devient plus
+          élaborée&nbsp;: vous pouvez donc, si vous le voulez, vous référer à <a
+            href="https://www.figma.com/file/NVYRZOyTIP05ScWbS5gEo4/OC---Brouillon-HTML-%2F-CSS-desktop-%26-mobile?node-id=2%3A459"
+            target="_blank" rel="noopener noreferrer nofollow">la maquette (le modèle) du site de Robbie Lens</a>.</p>
+        <p id="r-8069898" data-claire-element-id="33457551">Pour y accéder, vous avez besoin de créer un compte sur
+          Figma, c'est gratuit.</p>
+      </aside>
+      <p id="r-8049094" data-claire-element-id="33406849">Des modifications ont été apportées au fichier de code pour
+        que vous ayez davantage d'éléments&nbsp;:</p>
+      <ul id="r-8049101" data-claire-element-id="33406856">
+        <li id="r-8049096" data-claire-element-id="33406851">
+          <p id="r-8049095" data-claire-element-id="33406850">des images ont été ajoutées dans le dossier
+            "images"&nbsp;;</p>
+        </li>
+        <li id="r-8049098" data-claire-element-id="33406853">
+          <p id="r-8049097" data-claire-element-id="33406852">des sections ont été ajoutées dans la page
+            d'accueil&nbsp;;</p>
+        </li>
+        <li id="r-8049100" data-claire-element-id="33406855">
+          <p id="r-8049099" data-claire-element-id="33406854">le style du footer a été modifié pour avoir le logo en
+            haut à gauche de la page, et les liens de navigation à droite.</p>
+        </li>
+      </ul>
+      <aside id="r-8050142" data-claire-element-id="33409990" data-claire-semantic="information" class="">
+        <p id="r-8049103" data-claire-element-id="33409989">Allez récupérer&nbsp;le modèle que vous trouverez dans <a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P3C3-exercice"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P3C3-exercice</a>.</p>
+      </aside>
+      <p id="r-8050143" data-claire-element-id="33409991">À partir de cette base de code, vous allez&nbsp;:</p>
+      <ul id="r-8049106" data-claire-element-id="33409143">
+        <li id="r-8049105" data-claire-element-id="33409142">
+          <p id="r-8049104" data-claire-element-id="33409141">utiliser &nbsp;<code
+              data-claire-semantic="text">flex</code>&nbsp; pour avoir le logo en haut à gauche de la page, et les liens
+            de navigation à droite dans l’en-tête&nbsp;;</p>
+        </li>
+      </ul>
+      <ul id="r-8049111" data-claire-element-id="33406866">
+        <li id="r-8049108" data-claire-element-id="33406863">
+          <p id="r-8049107" data-claire-element-id="33406862">réagencer les éléments pour avoir le titre de la page
+            d'accueil, le paragraphe, et le lien ayant la classe "CTA" à gauche, et la photo à droite&nbsp;;</p>
+        </li>
+        <li id="r-8049110" data-claire-element-id="33406865">
+          <p id="r-8049109" data-claire-element-id="33406864">importer les images dans la page d'accueil, et créer une
+            grille d'images avec deux rangées de 3&nbsp;images chacune.&nbsp;</p>
+        </li>
+      </ul>
+      <aside id="r-8049136" data-claire-element-id="33409145" data-claire-semantic="information">
+        <p id="r-8049112" data-claire-element-id="33409144">Vous trouverez dans la base de code, pour démarrer
+          l'exercice, des exercices qui vous aideront à mettre en place votre code. Et une fois que vous aurez fini,
+          vous pouvez comparer ce que vous avez fait avec la solution sur&nbsp;<a
+            href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/tree/P3C3-solution"
+            target="_blank" rel="noopener noreferrer nofollow">la branche P3C3-solution.</a></p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-8" data-widget="foldable">
+    <h3 id="r-8049137" data-claire-element-id="33450661"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">En résumé<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <ul id="r-8049128" data-claire-element-id="33409323" class="">
+        <li id="r-8049115" data-claire-element-id="33409164">
+          <p id="r-8049114" data-claire-element-id="33409163">Le principe de Flexbox est d'avoir un conteneur avec
+            plusieurs éléments à l'intérieur. Avec &nbsp;<code data-claire-semantic="text">display: flex;</code>&nbsp;
+            sur le conteneur, les éléments à l'intérieur sont agencés en mode Flexbox (horizontalement, par défaut).</p>
+        </li>
+        <li id="r-8049117" data-claire-element-id="33409166">
+          <p id="r-8049116" data-claire-element-id="33409165">Flexbox peut gérer toutes les directions. Avec &nbsp;<code
+              data-claire-semantic="text">flex-direction</code>&nbsp;, on peut indiquer si les éléments sont agencés
+            horizontalement (par défaut) ou verticalement. Cela définit ce qu'on appelle l'<em>axe principal</em>.</p>
+        </li>
+        <li id="r-8049119" data-claire-element-id="33409168">
+          <p id="r-8049118" data-claire-element-id="33409167">L'alignement des éléments se fait sur l'axe principal avec
+            &nbsp;<code data-claire-semantic="text">justify-content</code>&nbsp; et sur l'axe secondaire avec
+            &nbsp;<code data-claire-semantic="text">align-items</code>&nbsp;.</p>
+        </li>
+        <li id="r-8049121" data-claire-element-id="33409170">
+          <p id="r-8049120" data-claire-element-id="33409169">Avec &nbsp;<code
+              data-claire-semantic="text">flex-wrap</code>, on peut autoriser les éléments à revenir à la ligne s'ils
+            n'ont plus d'espace.</p>
+        </li>
+        <li id="r-8049123" data-claire-element-id="33409322">
+          <p id="r-8049122" data-claire-element-id="33409321">S'il y a plusieurs lignes, on peut indiquer comment les
+            lignes doivent se répartir entre elles avec &nbsp;<code data-claire-semantic="text">align-content</code>.
+          </p>
+        </li>
+      </ul>
+      <p id="r-8049129" data-claire-element-id="33406884"><em>Alors, la découverte de Flexbox vous a plu&nbsp;?
+          J'espère, parce que dans le chapitre suivant nous allons voir les bases d'un outil tout aussi puissant&nbsp;:
+          CSS Grids&nbsp;!</em></p>
+      <p id="r-8067483" data-claire-element-id="33450660"></p>
+    </div>
+  </div>
+
+</body>
+
+</html>
