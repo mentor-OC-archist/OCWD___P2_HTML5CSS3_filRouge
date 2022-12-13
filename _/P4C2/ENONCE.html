@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P4C2: Créez votre site web avec HTML5 et CSS3</title>
+  <style>
+    code[data-claire-semantic="text"] {
+      background: rgba(0, 0, 0, .04);
+      padding: 1px 5px;
+      margin: 0 4px;
+      border: 1px solid rgba(0, 0, 0, .09);
+      display: inline-block;
+      word-break: break-word;
+    }
+
+    code[data-claire-semantic="css"] .ace-openclassrooms {
+      margin-top: 25px;
+      background-color: #272822;
+      background: black;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    code[data-claire-semantic="css"]+textarea {
+      display: none;
+    }
+
+    .ace_gutter-cell:before {
+      content: counter(ace_line, decimal);
+      counter-increment: ace_line;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061492-creez-des-formulaires">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <table id="r-8061478" data-claire-element-id="33460544" class="">
+    <tbody id="r-8061477" data-claire-element-id="33460543">
+      <tr id="r-8053158" data-claire-element-id="33416168">
+        <td id="r-8053155" data-claire-element-id="33416165">
+          <p id="r-8053154" data-claire-element-id="33416164"><strong>Type de champ</strong></p>
+        </td>
+        <td id="r-8053157" data-claire-element-id="33416167">
+          <p id="r-8053156" data-claire-element-id="33416166"><strong>Code</strong></p>
+        </td>
+      </tr>
+      <tr id="r-8053163" data-claire-element-id="33420463">
+        <td id="r-8053160" data-claire-element-id="33420462">
+          <p id="r-8053159" data-claire-element-id="33420461">un e-mail</p>
+        </td>
+        <td id="r-8053162" data-claire-element-id="33420012">
+          <p id="r-8053161" data-claire-element-id="33420011"><code
+              data-claire-semantic="text"><strong>&lt;input type="email"&gt;</strong></code></p>
+        </td>
+      </tr>
+      <tr id="r-8053169" data-claire-element-id="33420466">
+        <td id="r-8053165" data-claire-element-id="33420465">
+          <p id="r-8053164" data-claire-element-id="33420464">une URL</p>
+        </td>
+        <td id="r-8053168" data-claire-element-id="33420402">
+          <p id="r-8053166" data-claire-element-id="33420014"><code
+              data-claire-semantic="text"><strong>&lt;input type="url"&gt;</strong></code></p>
+          <p id="r-8053167" data-claire-element-id="33420401">On peut demander à saisir une adresse absolue, commençant
+            généralement par &nbsp;<code data-claire-semantic="text">http://</code>&nbsp;</p>
+        </td>
+      </tr>
+      <tr id="r-8053174" data-claire-element-id="33420469">
+        <td id="r-8053171" data-claire-element-id="33420468">
+          <p id="r-8053170" data-claire-element-id="33420467">un numéro de téléphone</p>
+        </td>
+        <td id="r-8053173" data-claire-element-id="33420018">
+          <p id="r-8053172" data-claire-element-id="33420017"><code
+              data-claire-semantic="text"><strong>&lt;input type="tel"&gt;</strong></code></p>
+        </td>
+      </tr>
+      <tr id="r-8053180" data-claire-element-id="33420472">
+        <td id="r-8053176" data-claire-element-id="33420471">
+          <p id="r-8053175" data-claire-element-id="33420470">un nombre entier</p>
+        </td>
+        <td id="r-8053179" data-claire-element-id="33420021">
+          <p id="r-8053177" data-claire-element-id="33420020"><code
+              data-claire-semantic="text"><strong>&lt;input type="number"&gt;</strong></code></p>
+          <p id="r-8053178" data-claire-element-id="33416188">Le champ s'affiche en général avec des petites flèches
+            pour changer la valeur.</p>
+        </td>
+      </tr>
+      <tr id="r-8061468" data-claire-element-id="33460534">
+        <td id="r-8053182" data-claire-element-id="33420474">
+          <p id="r-8053181" data-claire-element-id="33420473">un curseur (aussi appelé “slider”)</p>
+        </td>
+        <td id="r-8061467" data-claire-element-id="33460533">
+          <p id="r-8053183" data-claire-element-id="33420023"><code
+              data-claire-semantic="text"><strong>&lt;input type="range"&gt;</strong></code></p>
+          <p id="r-8054781" data-claire-element-id="33421221">On utilise <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/input/range" target="_blank"
+              rel="noopener noreferrer nofollow">range</a> pour demander au visiteur une valeur comprise entre deux
+            bornes :</p>
+          <figure id="r-8061466" data-claire-element-id="33460532"><img id="r-8054904" data-claire-element-id="33421770"
+              src="../images/P4C2c.png"
+              alt="Un exemple d'affichage du résultat du type range avec un curseur que le visiteur peut déplacer pour choisir un niveau de volume de l'audio.">
+            <figcaption>Un champ de curseur</figcaption>
+          </figure>
+        </td>
+      </tr>
+      <tr id="r-8061472" data-claire-element-id="33460538">
+        <td id="r-8053187" data-claire-element-id="33420477">
+          <p id="r-8053186" data-claire-element-id="33420476">une date</p>
+        </td>
+        <td id="r-8061471" data-claire-element-id="33460537">
+          <p id="r-8053188" data-claire-element-id="33421281">Différents types de champs de sélection de date existent,
+            comme&nbsp;</p>
+          <p id="r-8054801" data-claire-element-id="33421341"><strong><code
+                data-claire-semantic="text">&lt;input type="date"&gt;</code></strong>&nbsp;pour sélectionner une date :
+          </p>
+          <figure id="r-8061470" data-claire-element-id="33460536"><img id="r-8054907" data-claire-element-id="33421775"
+              src="../images/P4C2a.png"
+              alt="Un champ de date affiche pour le visiteur la possibilité de sélectionner une date dans un calendrier qui se déroule à partir de l'icône visible à la fin du champ. Le code HTML montre qu'on peut afficher une date par défaut, et entre une date minimu"
+              style="cursor: -webkit-zoom-in;">
+            <figcaption>Un champ de date et le code associé</figcaption>
+          </figure>
+          <p id="r-8054792" data-claire-element-id="33421245">Mais il existe des variantes :</p>
+          <ul id="r-8054793" data-claire-element-id="33421323">
+            <li id="r-8054587" data-claire-element-id="33421322">
+              <p id="r-8054586" data-claire-element-id="33421321"><strong><code
+                    data-claire-semantic="text">&lt;input type="time"&gt;</code></strong>&nbsp;pour l'heure&nbsp;;</p>
+            </li>
+            <li id="r-8053192" data-claire-element-id="33420436">
+              <p id="r-8053191" data-claire-element-id="33420435"><code
+                  data-claire-semantic="text"><strong>&lt;input type="week"&gt;</strong></code>&nbsp; pour la semaine ;
+              </p>
+            </li>
+            <li id="r-8053194" data-claire-element-id="33420438">
+              <p id="r-8053193" data-claire-element-id="33420437"><code
+                  data-claire-semantic="text"><strong>&lt;input type="month"</strong></code>&nbsp; pour le mois ;</p>
+            </li>
+            <li id="r-8053196" data-claire-element-id="33420440">
+              <p id="r-8053195" data-claire-element-id="33420439"><code
+                  data-claire-semantic="text"><strong>&lt;input type="datetime"&gt;</strong></code>&nbsp; pour la date
+                et l'heure (avec gestion du décalage horaire) ;</p>
+            </li>
+            <li id="r-8053198" data-claire-element-id="33420442">
+              <p id="r-8053197" data-claire-element-id="33420441"><code
+                  data-claire-semantic="text"><strong>&lt;input type="datetime-local"&gt;</strong></code>&nbsp; pour la
+                date et l'heure (sans gestion du décalage horaire).</p>
+            </li>
+          </ul>
+          <aside id="r-8053201" data-claire-element-id="33416211" data-claire-semantic="warning">
+            <p id="r-8053200" data-claire-element-id="33416210">Vérifiez bien <a
+                href="https://caniuse.com/#feat=input-datetime" target="_blank" rel="noopener noreferrer nofollow">quels
+                navigateurs gèrent ce type de champ</a>, il n'est pas encore complètement reconnu.</p>
+          </aside>
+        </td>
+      </tr>
+      <tr id="r-8061476" data-claire-element-id="33460542">
+        <td id="r-8053205" data-claire-element-id="33420484">
+          <p id="r-8053204" data-claire-element-id="33420483">une recherche</p>
+        </td>
+        <td id="r-8061475" data-claire-element-id="33460541">
+          <p id="r-8053206" data-claire-element-id="33420051"><code
+              data-claire-semantic="text"><strong>&lt;input type="search"&gt;</strong></code></p>
+          <figure id="r-8061474" data-claire-element-id="33460540"><img id="r-8054916" data-claire-element-id="33421928"
+              src="../images/P4C2b.png"
+              alt="Un champ de recherche s'affiche pour le visiteur dans lequel il peut écrire ce qu'il recherche. Un libellé indique au visiteur qu'il peut faire une recherche. Un bouton pour lancer la recherche a été ajouté avec la balise button."
+              style="cursor: -webkit-zoom-in;">
+            <figcaption>Un champ de recherche et le code associé</figcaption>
+          </figure>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-4" data-widget="foldable">
+    <h3 id="r-8053334" data-claire-element-id="33451121" class="foldable__button secondTitle js-foldable-button">En
+      résumé<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <ul id="r-8053326" data-claire-element-id="33451120" class="">
+        <li id="r-8053312" data-claire-element-id="33451119">
+          <p id="r-8053311" data-claire-element-id="33451118">Un formulaire est englobé par la balise HTML&nbsp;
+            &nbsp;<code data-claire-semantic="text">&lt;form&gt;&lt;/form&gt;</code>&nbsp; à laquelle on ajoute les
+            attributs &nbsp;<code data-claire-semantic="text">method</code>&nbsp; et &nbsp;<code
+              data-claire-semantic="text">action</code>.</p>
+        </li>
+        <li id="r-8053321" data-claire-element-id="33416401">
+          <p id="r-8053313" data-claire-element-id="33416393">On utilise ensuite d'autres balises HTML pour permettre au
+            visiteur du site de saisir des informations :</p>
+          <ul id="r-8053320" data-claire-element-id="33416400">
+            <li id="r-8053315" data-claire-element-id="33416395">
+              <p id="r-8053314" data-claire-element-id="33416394">la balise orpheline &nbsp;<code
+                  data-claire-semantic="text">&lt;input&gt;</code>&nbsp; pour un champ de saisie monoligne&nbsp;;</p>
+            </li>
+            <li id="r-8053317" data-claire-element-id="33416397">
+              <p id="r-8053316" data-claire-element-id="33416396">la balise en paire &nbsp;<code
+                  data-claire-semantic="text">&lt;textarea&gt; &lt;/textarea&gt;</code>&nbsp; pour un champ de saisie
+                multiligne&nbsp;;</p>
+            </li>
+            <li id="r-8053319" data-claire-element-id="33416399">
+              <p id="r-8053318" data-claire-element-id="33416398">la balise en paire &nbsp;<code
+                  data-claire-semantic="text">&lt;select&gt; &lt;/select&gt;</code>&nbsp; suivi d'options avec la balise
+                en paire &nbsp;<code data-claire-semantic="text">&lt;option&gt; &lt;/option&gt;</code>&nbsp; pour une
+                liste déroulante.</p>
+            </li>
+          </ul>
+        </li>
+        <li id="r-8053323" data-claire-element-id="33416403">
+          <p id="r-8053322" data-claire-element-id="33416402">Le champ &nbsp;<code
+              data-claire-semantic="text">&lt;input&gt;</code>&nbsp; peut également être configuré pour saisir d'autres
+            types de données&nbsp;: e-mail, URL, numéro de téléphone, date, etc.</p>
+        </li>
+        <li id="r-8053325" data-claire-element-id="33416405">
+          <p id="r-8053324" data-claire-element-id="33416404">Un label peut être relié à n'importe quel input avec
+            l'attribut &nbsp;<code data-claire-semantic="text">for</code>&nbsp; correspondant à l'attribut &nbsp;<code
+              data-claire-semantic="text">name</code>&nbsp; pour le champ utilisé.</p>
+        </li>
+      </ul>
+      <p id="r-8053327" data-claire-element-id="33422197"><em>Vous avez vu les bases des formulaires ! Bravo à
+          vous&nbsp;! Mais nous n'avons pas encore terminé&nbsp;: dans le chapitre suivant, vous verrez comment
+          regrouper vos champs, et envoyer votre formulaire. Ce sera l'occasion de vous exercer sur le projet de Robbie
+          Lens. Alors à tout de suite !</em></p>
+      <p id="r-8067602" data-claire-element-id="33451018"></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

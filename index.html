@@ -19,7 +19,7 @@
         <a href="#">&lt;</a>
         <section>
             <h1 id="h1">Choisir un exercice dans le select ci-dessous (# exos disponibles)</h1>
-            <select id="select" onchange="selectOnchange(this)">
+            <select id="select" onchange="">
                 <option selected value="">Choisir un exercice (#)</option>
             </select>
         </section>
@@ -34,14 +34,15 @@
 
         <p id="tasks_p"></p>
         
+        <iframe id="iframe_enonce" src="" frameborder="0"></iframe>
         <iframe id="iframe" src="view-source:http://127.0.0.1:5500/index.html" frameborder="0"></iframe>
         <div class="">
             <button href="#" onclick="this.parentNode.classList.toggle('show')">
                 <span>Show (####) codes</span>
                 <span>^</span>
             </button>
-            <iframe id="iframe_sass" src="" frameborder="0"></iframe>
-            <iframe id="iframe_css" src="" frameborder="0"></iframe>
+            <iframe id="iframe_sol" src="" frameborder="0"></iframe>
+            <iframe id="iframe_codebase" src="" frameborder="0"></iframe>
         </div>
 
         <ol id="tasks_ol"></ol>
@@ -60,8 +61,8 @@
 
     <section id="mindmaps">
         <h2>MINDMAPS: </h2>
-        <iframe src="" frameborder="0" id="mindmap"></iframe>
-        <iframe src="" frameborder="0" id="mindmap_"></iframe>
+        <iframe src="./assets/mindmaps/HTML.html" frameborder="0"></iframe>
+        <iframe src="./assets/mindmaps/CSS.html" frameborder="0"></iframe>
         
     </section>
 

@@ -1,6 +1,10 @@
 import Tools from "./assets/Tools.js"
         let index
+        //, tools = new Tools()
+        
+        //Tools.showSourceOnIframeLoad()
 
+        select.onchange = selectOnchange
         select.focus()
 
         /**
@@ -31,10 +35,10 @@ import Tools from "./assets/Tools.js"
          
         /**
          * PERMET DE SELECTIONNER UN NOUVEL EXERCICE
-         * @param {event onchange} that CE N'EST PAS VRAIMENT UTILISÉ xD
+         * //// @param {event onchange} that CE N'EST PAS VRAIMENT UTILISÉ xD
          */
-        function selectOnchange(that){
-            // console.log(that);
+        function selectOnchange(){
+            // console.log();
             // alert(select.selectedIndex)
             // alert(select.childNodes[select.selectedIndex].value)
             // console.log(select.querySelectorAll('option')[select.selectedIndex]);
@@ -44,9 +48,11 @@ import Tools from "./assets/Tools.js"
             // console.log(select.value);
 
             iframe.src = "./_/"+select.value
-            iframe_sass.src = "./_/"+that.value+"/sass/main.scss"
-            iframe_css.src = "./_/"+select.value+"/public/css/style.css"
+            iframe_enonce.src = "./_/"+select.value+"/ENONCE.html"
+            iframe_sol.src = "./_/"+select.value+"/_/SOLUTION/"
+            iframe_codebase.src = "./_/"+select.value+"/_/"
 
+            /*
             h1.innerHTML = p.innerHTML = tasks_p.innerHTML = tasks_ol.innerHTML = ""
             h1.innerHTML = opt.data.h
             p.innerHTML = opt.data.p
@@ -59,6 +65,7 @@ import Tools from "./assets/Tools.js"
                     : "calc(" + (100 / Math.floor(opt.data.tasks.ol.length / 3)) + "% - 1em)"
                 tasks_ol.append(li) 
             })
+            */
 
         }
 
