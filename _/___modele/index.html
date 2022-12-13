@@ -11,7 +11,16 @@
     </style>
   </head>
   <body>
-    
+    <iframe id="github-iframe" src=""></iframe>
+<script>
+    fetch('https://api.github.com/repos/mentor-OC-archist/OCWD___P2_HTML5CSS3_filRouge/contents/index.html',)
+        .then(function(response) {
+            return response.json();
+        }).then(function(data) {
+            var iframe = document.getElementById('github-iframe');
+            iframe.src = 'data:text/html;base64,' + encodeURIComponent(data['content']);
+        });
+</script>
     
     
   </body>
