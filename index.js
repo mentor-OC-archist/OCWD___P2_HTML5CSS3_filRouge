@@ -1,5 +1,6 @@
 import Tools from "./assets/Tools.js"
         let index
+        , filRouge_origin_URI = "https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3"
         , github_account = "mentor-OC-archist"
         , repo_name = "OCWD___P2_HTML5CSS3_filRouge"
         , default_working_branch = "develop"
@@ -51,12 +52,38 @@ import Tools from "./assets/Tools.js"
             document.location.hash = select.value
             // console.log(select.value);
 
-            if(location.host.indexOf('localhost')==-1)prefix_host = "https://raw.githubusercontent.com/"+github_account+"/"+repo_name+"/"+default_working_branch
 
+
+            if(location.host.indexOf('localhost')==-1 && location.host.indexOf('127.0.0.1')==-1)prefix_host = "https://raw.githubusercontent.com/"+github_account+"/"+repo_name+"/"+default_working_branch
             iframe.src = prefix_host+"/_/"+select.value
             iframe_enonce.src = prefix_host+"/_/"+select.value+"/ENONCE.html"
             iframe_sol.src = prefix_host+"/_/"+select.value+"/_/SOLUTION/"
             iframe_codebase.src = prefix_host+"/_/"
+
+
+
+            _codepens.innerHTML = opt.data.codepens && opt.data.codepens.map((url,i) => `<a href="${url}" target="_blank">Codepen ${select.value+" - "+(i+1)}</a>`)
+
+            if(opt?.data?.begin!==false){
+                _begin.href = filRouge_origin_URI+"/tree/"+select.value+"-exercice"
+                _begin.innerHTML = select.value+"-exercice"
+            }
+            if(opt?.data?.begin!==false){
+                _sol.href = filRouge_origin_URI+"/tree/"+select.value+"-solution"
+                _sol.innerHTML = select.value+"-solution"
+            }
+            
+
+
+            /*
+            if(opt.data.begin != "" && opt.data.begin.indexOf('codepen') == -1){
+                copypast.className = ""
+                from_root.innerHTML = "cd ./_/begins/"+select.value+"; npm run start"
+                from_inner.innerHTML = "cd ../"+select.value+"; npm run start"
+            }else copypast.className = "off"
+            */
+            
+
 
             /*
             h1.innerHTML = p.innerHTML = tasks_p.innerHTML = tasks_ol.innerHTML = ""
@@ -96,3 +123,6 @@ import Tools from "./assets/Tools.js"
         }
         document.querySelector("header>a:first-of-type").addEventListener('click', (e)=>{e.preventDefault();move();})
         document.querySelector("header>a:last-of-type").addEventListener('click', (e)=>{e.preventDefault();move(1);})
+
+        document.querySelectorAll("iframe.enhanced").forEach(ifr => { console.log(ifr); ifr.addEventListener('click', (self) => { window.open(self.target.src, '_blank') }) })
+        
