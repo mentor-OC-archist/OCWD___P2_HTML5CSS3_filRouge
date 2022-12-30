@@ -8,6 +8,8 @@
     <title>TOUS LES EXOS DU COURS D'OC SUR: #####</title>
     <link rel="stylesheet/less" type="text/css" href="assets/style.less">
     <script src="./assets/less.js"></script>
+    <script src="./assets/datas.js"></script>
+    <script defer src="index.js"></script>
 </head>
 
 <body>
@@ -18,33 +20,35 @@
     <header>
         <a href="#">&lt;</a>
         <section>
-            <h1 id="h1">Choisir un exercice dans le select ci-dessous (# exos disponibles)</h1>
+            <!-- <h1 id="h1">Choisir un exercice dans le select ci-dessous (# exos disponibles)</h1> -->
             <select id="select" onchange="">
                 <option selected value="">Choisir un exercice (#)</option>
             </select>
         </section>
         <a href="#">&gt;</a>
+        <menu>
+        </menu>
     </header>
 
 
     <main>
-        <p id="p"></p>
+        <!--p id="p"></p>
 
         <hr>
 
-        <p id="tasks_p"></p>
+        <p id="tasks_p"></p-->
         
         <!--p id="copypast">
             <b>Cliquer sur l'un des 2 textes ci-dessous, pour le coller dans le terminal et arriver au projet concerné</b>
             Depuis la racine de projet: <span id="from_root"></span> 
             Depuis un exercice antérieur ("/_/begins/P#C#/"): <span id="from_inner"></span>
         </p-->
-        <nav id="_codepens" href="#"></nav>
+        <!--nav id="_codepens" href="#"></nav>
         <nav id="_begin_sol">
             <a id="_begin" href="#" target="_blank"></a>
             <a id="_sol" href="#" target="_blank"></a>
         </nav>
-        <button id="refresh" onclick="iframe.src=iframe.src" title="Actualiser l'iframe">⟳</button>
+        <button id="refresh" onclick="iframe.src=iframe.src" title="Actualiser l'iframe">⟳</button-->
         
         <iframe id="iframe_enonce" src="" frameborder="0"></iframe>
         <iframe id="iframe" src="view-source:http://127.0.0.1:5500/index.html" frameborder="0"></iframe>
@@ -57,11 +61,11 @@
             <iframe id="iframe_codebase" src="" frameborder="0"></iframe>
         </div>
 
-        <ol id="tasks_ol"></ol>
+        <!-- <ol id="tasks_ol"></ol> -->
         
     </main>
 
-    <aside>
+    <!--aside>
         <h2>Exercices solutionnés</h2>
         <iframe width="560" height="315" src="https://youtu.be/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <hr/>
@@ -80,9 +84,10 @@
         <span class="enhanced">ok</span>
         <iframe src="./assets/mindmaps/CSS.html" frameborder="0"></iframe>
         
-    </section>
+    </section-->
 
     <footer>
+    <!--
         <a title="Lien ver le cours OC" target="_blank" href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3"><img src="./assets/img/oc.ico" alt="cours OC"></a>
         <a title="Lien vers les codepen liés à ce cours" target="_blank" href="https://codepen.io/collection/XmqKJQ"><img src="./assets/img/codepen.webp" alt="Collection codepen lié à ce cours OC"></a>
         <a title="Lien vers le repo fil-rouge d'origine liés à ce cours" target="_blank" href="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3"><img src="./assets/img/github.png" alt="repo github lié à ce cours OC"></a>
@@ -90,10 +95,9 @@
         <ul>
             <li>....DESCRIPTION....</li>
         </ul>
+    -->
     </footer>
 
-    <script src="./assets/datas.js"></script>
-    <script type="module" src="index.js"></script>
 </body>
 
 </html>

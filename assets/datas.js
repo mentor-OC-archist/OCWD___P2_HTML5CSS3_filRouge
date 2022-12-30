@@ -75,3 +75,25 @@ const jsonDatas = {
         , quiz: ["https://codepen.io/nicolaspatschkowski/pen/PoeKzLb?editors=1100"]
     },
 }
+
+const menu_data = {
+    // howto: [""],
+/********************************* */
+    // enonce: [""],
+    // vid_sol_mentor: [""],
+    vid_cours_oc: ["Wqtvtogu-7c"],
+/********************************* */
+    link_cours_oc: ["1603881-creez-votre-site-web-avec-html5-et-css3"],
+    link_filrouge_remix: ["OCWD___P2_HTML5CSS3_filRouge"],
+    link_filrouge_origin: ["1603881-creez-votre-site-web-avec-html5-et-css3"],
+    codepen_collection: ["XmqKJQ"],
+/********************************* */
+    // link_collection: ["/assets/ressources/"],
+    mindmap: ["/assets/mindmaps"],
+    // dl_install: ["/assets/"],
+    diaporama_img_cours: ["/assets/images_cours"],
+/********************************* */
+    my_channel: ["https://www.youtube.com/channel/UC_EV9aFhwEz0F1E68oFQQGA"],
+    my_github: ["https://github.com/mentor-OC-archist"],
+    my_website: ["http://archist.me/"],
+}
